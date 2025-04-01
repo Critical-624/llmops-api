@@ -1,0 +1,494 @@
+[2024-09-28 11:26:56,933.933] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:26:59,805.805] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:26:59,807.807] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:27:05,737.737] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 11:27:06,022.022] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:27:08,812.812] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:27:08,815.815] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:27:09,067.067] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 11:27:09,316.316] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:27:12,018.018] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:27:12,021.021] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:27:16,838.838] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 11:27:17,070.070] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:27:19,607.607] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:27:22,057.057] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:27:22,058.058] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:27:33,179.179] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 11:27:33,412.412] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:27:35,910.910] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:27:35,912.912] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:27:38,210.210] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 11:27:38,457.457] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:27:40,879.879] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:27:40,880.880] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:27:46,463.463] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 11:27:46,721.721] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:28:04,593.593] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:28:07,131.131] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:28:07,133.133] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:28:11,646.646] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 11:28:11,879.879] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:28:13,336.336] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:28:17,996.996] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:28:20,594.594] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:28:20,595.595] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:30:55,621.621] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 11:30:55,842.842] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:30:58,407.407] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:30:58,410.410] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:31:53,077.077] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 11:31:53,300.300] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:31:55,887.887] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:31:55,890.890] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:33:32,808.808] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 11:33:33,041.041] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:33:35,871.871] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:33:35,873.873] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:33:46,364.364] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 11:33:46,609.609] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:33:49,204.204] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:33:49,207.207] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:34:15,408.408] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 11:34:15,654.654] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:34:18,217.217] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:34:18,220.220] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:34:50,161.161] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\default_config.py', reloading
+[2024-09-28 11:34:50,424.424] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:34:53,026.026] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:34:53,029.029] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:34:55,493.493] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\default_config.py', reloading
+[2024-09-28 11:34:55,727.727] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:34:58,334.334] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:34:58,337.337] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:35:22,361.361] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\default_config.py', reloading
+[2024-09-28 11:35:22,605.605] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:35:25,348.348] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:35:25,350.350] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:35:35,698.698] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\default_config.py', reloading
+[2024-09-28 11:35:35,965.965] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:35:38,598.598] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:35:38,601.601] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:35:50,243.243] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 11:35:50,497.497] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:35:53,076.076] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:35:53,078.078] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:39:19,411.411] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 11:39:19,637.637] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:39:22,272.272] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:39:22,275.275] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:39:30,391.391] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 11:39:30,609.609] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:39:33,324.324] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:39:33,327.327] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:39:35,799.799] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 11:39:36,046.046] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:39:38,834.834] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:39:38,836.836] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:40:10,805.805] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 11:40:11,060.060] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:40:13,823.823] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:40:13,825.825] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:42:49,301.301] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 11:42:49,548.548] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:42:52,388.388] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:42:52,391.391] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:43:03,991.991] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 11:43:04,219.219] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:43:06,888.888] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:43:06,891.891] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 11:44:18,439.439] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 11:44:18,660.660] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 11:44:21,334.334] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 11:44:21,337.337] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:00:59,452.452] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:00:59,700.700] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:01:02,307.307] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:01:02,310.310] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:01:03,681.681] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:01:03,935.935] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:01:06,563.563] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:01:06,565.565] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:01:09,044.044] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:01:09,279.279] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:01:11,826.826] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:01:11,829.829] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:01:14,315.315] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:01:14,535.535] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:01:17,055.055] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:01:17,057.057] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:01:27,085.085] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:01:27,314.314] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:01:29,807.807] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:01:29,808.808] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:02:12,833.833] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:02:13,052.052] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:02:15,682.682] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:02:15,684.684] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:02:59,818.818] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:03:00,044.044] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:03:02,737.737] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:03:02,740.740] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:03:07,521.521] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:03:07,755.755] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:03:10,452.452] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:03:10,455.455] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:03:14,081.081] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:03:14,315.315] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:03:16,830.830] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:03:16,832.832] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:03:29,473.473] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:03:29,695.695] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:03:32,476.476] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:03:32,480.480] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:03:37,248.248] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:03:37,497.497] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:03:39,930.930] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:03:39,931.931] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:03:43,356.356] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:03:43,598.598] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:03:46,102.102] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:03:46,103.103] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:03:48,432.432] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:03:48,680.680] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:03:51,287.287] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:03:51,288.288] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:04:46,429.429] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:04:46,659.659] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:04:49,402.402] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:04:49,404.404] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:04:54,204.204] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:04:54,516.516] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:04:57,270.270] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:04:57,272.272] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:04:58,629.629] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:04:58,890.890] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:05:01,415.415] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:05:01,418.418] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:05:05,076.076] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:05:05,324.324] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:05:07,955.955] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:05:07,956.956] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:05:25,984.984] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:05:26,203.203] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:05:28,664.664] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:05:28,666.666] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:05:35,434.434] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:05:35,659.659] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:05:38,072.072] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:05:38,074.074] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:06:29,099.099] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:06:29,359.359] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:06:31,991.991] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:06:31,994.994] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:06:43,571.571] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 12:06:43,792.792] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:06:46,436.436] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:06:46,439.439] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:07:21,656.656] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\server\\http.py', reloading
+[2024-09-28 12:07:21,925.925] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:07:24,617.617] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:07:24,619.619] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:07:32,748.748] _internal.py -> _log line:96 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-09-28 12:07:32,748.748] _internal.py -> _log line:96 [INFO]: [33mPress CTRL+C to quit[0m
+[2024-09-28 12:07:32,749.749] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:07:35,421.421] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:07:35,424.424] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:08:16,554.554] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\task\\demo_task.py', reloading
+[2024-09-28 12:08:16,776.776] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:08:19,447.447] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:08:19,450.450] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:09:38,187.187] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\task\\demo_task.py', reloading
+[2024-09-28 12:09:38,413.413] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:09:41,085.085] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:09:41,087.087] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:09:49,255.255] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\task\\demo_task.py', reloading
+[2024-09-28 12:09:49,477.477] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:09:52,256.256] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:09:52,259.259] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:10:19,970.970] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-09-28 12:10:20,240.240] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:10:23,081.081] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:10:23,083.083] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:10:32,463.463] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-09-28 12:10:32,699.699] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:10:35,670.670] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:10:35,672.672] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:15:07,183.183] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\app\\http\\app.py', reloading
+[2024-09-28 12:15:07,422.422] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:15:10,183.183] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:15:10,185.185] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:15:12,714.714] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\app\\http\\app.py', reloading
+[2024-09-28 12:15:12,966.966] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:15:15,653.653] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:15:15,656.656] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:17:13,281.281] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\app\\http\\app.py', reloading
+[2024-09-28 12:17:13,548.548] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:17:16,235.235] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:17:16,238.238] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:19:05,950.950] base.py -> _exec_single_context line:1903 [INFO]: select pg_catalog.version()
+[2024-09-28 12:19:05,950.950] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 12:19:05,951.951] base.py -> _exec_single_context line:1903 [INFO]: select current_schema()
+[2024-09-28 12:19:05,951.951] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 12:19:05,952.952] base.py -> _exec_single_context line:1903 [INFO]: show standard_conforming_strings
+[2024-09-28 12:19:05,952.952] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 12:19:05,952.952] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-09-28 12:19:05,954.954] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool.id AS api_tool_id, api_tool.account_id AS api_tool_account_id, api_tool.provider_id AS api_tool_provider_id, api_tool.name AS api_tool_name, api_tool.description AS api_tool_description, api_tool.url AS api_tool_url, api_tool.method AS api_tool_method, api_tool.parameters AS api_tool_parameters, api_tool.updated_at AS api_tool_updated_at, api_tool.created_at AS api_tool_created_at 
+FROM api_tool 
+WHERE api_tool.provider_id = %(provider_id_1)s::UUID AND api_tool.name = %(name_1)s
+[2024-09-28 12:19:05,954.954] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00015s] {'provider_id_1': 'd72bb9d7-8794-4caf-bd60-1f992c537065', 'name_1': 'YoudaoSuggest'}
+[2024-09-28 12:19:05,956.956] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool_provider.id AS api_tool_provider_id, api_tool_provider.account_id AS api_tool_provider_account_id, api_tool_provider.name AS api_tool_provider_name, api_tool_provider.icon AS api_tool_provider_icon, api_tool_provider.description AS api_tool_provider_description, api_tool_provider.openapi_schema AS api_tool_provider_openapi_schema, api_tool_provider.headers AS api_tool_provider_headers, api_tool_provider.updated_at AS api_tool_provider_updated_at, api_tool_provider.created_at AS api_tool_provider_created_at 
+FROM api_tool_provider 
+WHERE api_tool_provider.id = %(pk_1)s::UUID
+[2024-09-28 12:19:05,956.956] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00015s] {'pk_1': UUID('d72bb9d7-8794-4caf-bd60-1f992c537065')}
+[2024-09-28 12:19:06,094.094] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-09-28 12:19:06,094.094] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [28/Sep/2024 12:19:06] "GET /ping HTTP/1.1" 200 -
+[2024-09-28 12:19:54,418.418] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\task\\demo_task.py', reloading
+[2024-09-28 12:19:54,663.663] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 12:19:57,274.274] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 12:19:57,276.276] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 12:20:19,002.002] base.py -> _exec_single_context line:1903 [INFO]: select pg_catalog.version()
+[2024-09-28 12:20:19,002.002] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 12:20:19,003.003] base.py -> _exec_single_context line:1903 [INFO]: select current_schema()
+[2024-09-28 12:20:19,004.004] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 12:20:19,004.004] base.py -> _exec_single_context line:1903 [INFO]: show standard_conforming_strings
+[2024-09-28 12:20:19,004.004] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 12:20:19,005.005] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-09-28 12:20:19,008.008] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool.id AS api_tool_id, api_tool.account_id AS api_tool_account_id, api_tool.provider_id AS api_tool_provider_id, api_tool.name AS api_tool_name, api_tool.description AS api_tool_description, api_tool.url AS api_tool_url, api_tool.method AS api_tool_method, api_tool.parameters AS api_tool_parameters, api_tool.updated_at AS api_tool_updated_at, api_tool.created_at AS api_tool_created_at 
+FROM api_tool 
+WHERE api_tool.provider_id = %(provider_id_1)s::UUID AND api_tool.name = %(name_1)s
+[2024-09-28 12:20:19,008.008] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00024s] {'provider_id_1': 'd72bb9d7-8794-4caf-bd60-1f992c537065', 'name_1': 'YoudaoSuggest'}
+[2024-09-28 12:20:19,012.012] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool_provider.id AS api_tool_provider_id, api_tool_provider.account_id AS api_tool_provider_account_id, api_tool_provider.name AS api_tool_provider_name, api_tool_provider.icon AS api_tool_provider_icon, api_tool_provider.description AS api_tool_provider_description, api_tool_provider.openapi_schema AS api_tool_provider_openapi_schema, api_tool_provider.headers AS api_tool_provider_headers, api_tool_provider.updated_at AS api_tool_provider_updated_at, api_tool_provider.created_at AS api_tool_provider_created_at 
+FROM api_tool_provider 
+WHERE api_tool_provider.id = %(pk_1)s::UUID
+[2024-09-28 12:20:19,012.012] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00022s] {'pk_1': UUID('d72bb9d7-8794-4caf-bd60-1f992c537065')}
+[2024-09-28 12:20:19,159.159] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-09-28 12:20:19,160.160] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [28/Sep/2024 12:20:19] "GET /ping HTTP/1.1" 200 -
+[2024-09-28 12:21:48,267.267] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-09-28 12:21:48,267.267] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool.id AS api_tool_id, api_tool.account_id AS api_tool_account_id, api_tool.provider_id AS api_tool_provider_id, api_tool.name AS api_tool_name, api_tool.description AS api_tool_description, api_tool.url AS api_tool_url, api_tool.method AS api_tool_method, api_tool.parameters AS api_tool_parameters, api_tool.updated_at AS api_tool_updated_at, api_tool.created_at AS api_tool_created_at 
+FROM api_tool 
+WHERE api_tool.provider_id = %(provider_id_1)s::UUID AND api_tool.name = %(name_1)s
+[2024-09-28 12:21:48,267.267] base.py -> _exec_single_context line:1908 [INFO]: [cached since 89.26s ago] {'provider_id_1': 'd72bb9d7-8794-4caf-bd60-1f992c537065', 'name_1': 'YoudaoSuggest'}
+[2024-09-28 12:21:48,268.268] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool_provider.id AS api_tool_provider_id, api_tool_provider.account_id AS api_tool_provider_account_id, api_tool_provider.name AS api_tool_provider_name, api_tool_provider.icon AS api_tool_provider_icon, api_tool_provider.description AS api_tool_provider_description, api_tool_provider.openapi_schema AS api_tool_provider_openapi_schema, api_tool_provider.headers AS api_tool_provider_headers, api_tool_provider.updated_at AS api_tool_provider_updated_at, api_tool_provider.created_at AS api_tool_provider_created_at 
+FROM api_tool_provider 
+WHERE api_tool_provider.id = %(pk_1)s::UUID
+[2024-09-28 12:21:48,268.268] base.py -> _exec_single_context line:1908 [INFO]: [cached since 89.26s ago] {'pk_1': UUID('d72bb9d7-8794-4caf-bd60-1f992c537065')}
+[2024-09-28 12:21:48,344.344] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-09-28 12:21:48,344.344] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [28/Sep/2024 12:21:48] "GET /ping HTTP/1.1" 200 -
+[2024-09-28 15:31:40,210.210] base.py -> get_connection line:842 [INFO]: Connection <connection object at 0x0000015BFA2D69B0; dsn: 'user=postgres password=xxx dbname=llmops host=192.168.2.120 port=5432 client_encoding=utf8', closed: 0> exceeded timeout; recycling
+[2024-09-28 15:31:40,220.220] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-09-28 15:31:40,221.221] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool.id AS api_tool_id, api_tool.account_id AS api_tool_account_id, api_tool.provider_id AS api_tool_provider_id, api_tool.name AS api_tool_name, api_tool.description AS api_tool_description, api_tool.url AS api_tool_url, api_tool.method AS api_tool_method, api_tool.parameters AS api_tool_parameters, api_tool.updated_at AS api_tool_updated_at, api_tool.created_at AS api_tool_created_at 
+FROM api_tool 
+WHERE api_tool.provider_id = %(provider_id_1)s::UUID AND api_tool.name = %(name_1)s
+[2024-09-28 15:31:40,221.221] base.py -> _exec_single_context line:1908 [INFO]: [cached since 1.148e+04s ago] {'provider_id_1': 'd72bb9d7-8794-4caf-bd60-1f992c537065', 'name_1': 'YoudaoSuggest'}
+[2024-09-28 15:31:40,223.223] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool_provider.id AS api_tool_provider_id, api_tool_provider.account_id AS api_tool_provider_account_id, api_tool_provider.name AS api_tool_provider_name, api_tool_provider.icon AS api_tool_provider_icon, api_tool_provider.description AS api_tool_provider_description, api_tool_provider.openapi_schema AS api_tool_provider_openapi_schema, api_tool_provider.headers AS api_tool_provider_headers, api_tool_provider.updated_at AS api_tool_provider_updated_at, api_tool_provider.created_at AS api_tool_provider_created_at 
+FROM api_tool_provider 
+WHERE api_tool_provider.id = %(pk_1)s::UUID
+[2024-09-28 15:31:40,223.223] base.py -> _exec_single_context line:1908 [INFO]: [cached since 1.148e+04s ago] {'pk_1': UUID('d72bb9d7-8794-4caf-bd60-1f992c537065')}
+[2024-09-28 15:31:40,329.329] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-09-28 15:31:40,329.329] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [28/Sep/2024 15:31:40] "GET /ping HTTP/1.1" 200 -
+[2024-09-28 15:49:02,933.933] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 15:49:03,193.193] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 15:49:05,807.807] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 15:49:31,247.247] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 15:49:34,047.047] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 15:49:34,049.049] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 15:49:39,952.952] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\default_config.py', reloading
+[2024-09-28 15:49:40,185.185] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 15:49:42,938.938] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 15:49:42,941.941] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 15:52:13,942.942] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 15:52:14,177.177] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 15:52:17,345.345] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 15:52:17,347.347] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 15:52:22,185.185] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 15:52:22,431.431] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 15:52:25,139.139] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 15:52:25,142.142] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 15:52:33,355.355] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\default_config.py', reloading
+[2024-09-28 15:52:33,604.604] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 15:52:36,434.434] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 15:52:36,437.437] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 15:53:33,390.390] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 15:53:33,632.632] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 15:53:36,454.454] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 15:53:36,457.457] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 15:53:42,430.430] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\config\\config.py', reloading
+[2024-09-28 15:53:42,672.672] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 15:53:45,347.347] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 15:53:45,349.349] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 15:55:52,616.616] base.py -> _exec_single_context line:1903 [INFO]: select pg_catalog.version()
+[2024-09-28 15:55:52,616.616] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 15:55:52,617.617] base.py -> _exec_single_context line:1903 [INFO]: select current_schema()
+[2024-09-28 15:55:52,617.617] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 15:55:52,617.617] base.py -> _exec_single_context line:1903 [INFO]: show standard_conforming_strings
+[2024-09-28 15:55:52,617.617] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 15:55:52,618.618] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-09-28 15:55:52,619.619] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool.id AS api_tool_id, api_tool.account_id AS api_tool_account_id, api_tool.provider_id AS api_tool_provider_id, api_tool.name AS api_tool_name, api_tool.description AS api_tool_description, api_tool.url AS api_tool_url, api_tool.method AS api_tool_method, api_tool.parameters AS api_tool_parameters, api_tool.updated_at AS api_tool_updated_at, api_tool.created_at AS api_tool_created_at 
+FROM api_tool 
+WHERE api_tool.provider_id = %(provider_id_1)s::UUID AND api_tool.name = %(name_1)s
+[2024-09-28 15:55:52,619.619] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00014s] {'provider_id_1': 'd72bb9d7-8794-4caf-bd60-1f992c537065', 'name_1': 'YoudaoSuggest'}
+[2024-09-28 15:55:52,622.622] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool_provider.id AS api_tool_provider_id, api_tool_provider.account_id AS api_tool_provider_account_id, api_tool_provider.name AS api_tool_provider_name, api_tool_provider.icon AS api_tool_provider_icon, api_tool_provider.description AS api_tool_provider_description, api_tool_provider.openapi_schema AS api_tool_provider_openapi_schema, api_tool_provider.headers AS api_tool_provider_headers, api_tool_provider.updated_at AS api_tool_provider_updated_at, api_tool_provider.created_at AS api_tool_provider_created_at 
+FROM api_tool_provider 
+WHERE api_tool_provider.id = %(pk_1)s::UUID
+[2024-09-28 15:55:52,622.622] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00016s] {'pk_1': UUID('d72bb9d7-8794-4caf-bd60-1f992c537065')}
+[2024-09-28 15:55:52,807.807] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-09-28 15:55:52,807.807] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [28/Sep/2024 15:55:52] "GET /ping HTTP/1.1" 200 -
+[2024-09-28 15:58:15,417.417] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\server\\http.py', reloading
+[2024-09-28 15:58:15,657.657] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 15:58:18,364.364] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 15:58:18,367.367] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 15:58:36,237.237] base.py -> _exec_single_context line:1903 [INFO]: select pg_catalog.version()
+[2024-09-28 15:58:36,238.238] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 15:58:36,238.238] base.py -> _exec_single_context line:1903 [INFO]: select current_schema()
+[2024-09-28 15:58:36,239.239] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 15:58:36,240.240] base.py -> _exec_single_context line:1903 [INFO]: show standard_conforming_strings
+[2024-09-28 15:58:36,240.240] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 15:58:36,240.240] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-09-28 15:58:36,242.242] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool.id AS api_tool_id, api_tool.account_id AS api_tool_account_id, api_tool.provider_id AS api_tool_provider_id, api_tool.name AS api_tool_name, api_tool.description AS api_tool_description, api_tool.url AS api_tool_url, api_tool.method AS api_tool_method, api_tool.parameters AS api_tool_parameters, api_tool.updated_at AS api_tool_updated_at, api_tool.created_at AS api_tool_created_at 
+FROM api_tool 
+WHERE api_tool.provider_id = %(provider_id_1)s::UUID AND api_tool.name = %(name_1)s
+[2024-09-28 15:58:36,242.242] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00015s] {'provider_id_1': 'd72bb9d7-8794-4caf-bd60-1f992c537065', 'name_1': 'YoudaoSuggest'}
+[2024-09-28 15:58:36,245.245] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool_provider.id AS api_tool_provider_id, api_tool_provider.account_id AS api_tool_provider_account_id, api_tool_provider.name AS api_tool_provider_name, api_tool_provider.icon AS api_tool_provider_icon, api_tool_provider.description AS api_tool_provider_description, api_tool_provider.openapi_schema AS api_tool_provider_openapi_schema, api_tool_provider.headers AS api_tool_provider_headers, api_tool_provider.updated_at AS api_tool_provider_updated_at, api_tool_provider.created_at AS api_tool_provider_created_at 
+FROM api_tool_provider 
+WHERE api_tool_provider.id = %(pk_1)s::UUID
+[2024-09-28 15:58:36,245.245] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00014s] {'pk_1': UUID('d72bb9d7-8794-4caf-bd60-1f992c537065')}
+[2024-09-28 15:58:36,378.378] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-09-28 15:58:36,379.379] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [28/Sep/2024 15:58:36] "GET /ping HTTP/1.1" 200 -
+[2024-09-28 16:00:29,173.173] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\task\\demo_task.py', reloading
+[2024-09-28 16:00:29,407.407] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 16:00:32,239.239] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 16:00:32,241.241] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 16:00:37,485.485] base.py -> _exec_single_context line:1903 [INFO]: select pg_catalog.version()
+[2024-09-28 16:00:37,486.486] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:00:37,486.486] base.py -> _exec_single_context line:1903 [INFO]: select current_schema()
+[2024-09-28 16:00:37,486.486] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:00:37,487.487] base.py -> _exec_single_context line:1903 [INFO]: show standard_conforming_strings
+[2024-09-28 16:00:37,487.487] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:00:37,487.487] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-09-28 16:00:37,489.489] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool.id AS api_tool_id, api_tool.account_id AS api_tool_account_id, api_tool.provider_id AS api_tool_provider_id, api_tool.name AS api_tool_name, api_tool.description AS api_tool_description, api_tool.url AS api_tool_url, api_tool.method AS api_tool_method, api_tool.parameters AS api_tool_parameters, api_tool.updated_at AS api_tool_updated_at, api_tool.created_at AS api_tool_created_at 
+FROM api_tool 
+WHERE api_tool.provider_id = %(provider_id_1)s::UUID AND api_tool.name = %(name_1)s
+[2024-09-28 16:00:37,489.489] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00019s] {'provider_id_1': 'd72bb9d7-8794-4caf-bd60-1f992c537065', 'name_1': 'YoudaoSuggest'}
+[2024-09-28 16:00:37,491.491] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool_provider.id AS api_tool_provider_id, api_tool_provider.account_id AS api_tool_provider_account_id, api_tool_provider.name AS api_tool_provider_name, api_tool_provider.icon AS api_tool_provider_icon, api_tool_provider.description AS api_tool_provider_description, api_tool_provider.openapi_schema AS api_tool_provider_openapi_schema, api_tool_provider.headers AS api_tool_provider_headers, api_tool_provider.updated_at AS api_tool_provider_updated_at, api_tool_provider.created_at AS api_tool_provider_created_at 
+FROM api_tool_provider 
+WHERE api_tool_provider.id = %(pk_1)s::UUID
+[2024-09-28 16:00:37,491.491] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00015s] {'pk_1': UUID('d72bb9d7-8794-4caf-bd60-1f992c537065')}
+[2024-09-28 16:00:37,617.617] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-09-28 16:00:37,618.618] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [28/Sep/2024 16:00:37] "GET /ping HTTP/1.1" 200 -
+[2024-09-28 16:08:37,887.887] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 16:08:38,147.147] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 16:08:40,829.829] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 16:08:40,832.832] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 16:10:15,571.571] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 16:10:15,841.841] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 16:10:32,741.741] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 16:10:35,495.495] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 16:10:35,495.495] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 16:10:35,497.497] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 16:10:35,497.497] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 16:10:40,092.092] base.py -> _exec_single_context line:1903 [INFO]: select pg_catalog.version()
+[2024-09-28 16:10:40,092.092] base.py -> _exec_single_context line:1903 [INFO]: select pg_catalog.version()
+[2024-09-28 16:10:40,092.092] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:10:40,092.092] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:10:40,093.093] base.py -> _exec_single_context line:1903 [INFO]: select current_schema()
+[2024-09-28 16:10:40,093.093] base.py -> _exec_single_context line:1903 [INFO]: select current_schema()
+[2024-09-28 16:10:40,093.093] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:10:40,093.093] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:10:40,093.093] base.py -> _exec_single_context line:1903 [INFO]: show standard_conforming_strings
+[2024-09-28 16:10:40,093.093] base.py -> _exec_single_context line:1903 [INFO]: show standard_conforming_strings
+[2024-09-28 16:10:40,093.093] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:10:40,093.093] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:10:40,096.096] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-09-28 16:10:40,096.096] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-09-28 16:10:40,097.097] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool.id AS api_tool_id, api_tool.account_id AS api_tool_account_id, api_tool.provider_id AS api_tool_provider_id, api_tool.name AS api_tool_name, api_tool.description AS api_tool_description, api_tool.url AS api_tool_url, api_tool.method AS api_tool_method, api_tool.parameters AS api_tool_parameters, api_tool.updated_at AS api_tool_updated_at, api_tool.created_at AS api_tool_created_at 
+FROM api_tool 
+WHERE api_tool.provider_id = %(provider_id_1)s::UUID AND api_tool.name = %(name_1)s
+[2024-09-28 16:10:40,097.097] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool.id AS api_tool_id, api_tool.account_id AS api_tool_account_id, api_tool.provider_id AS api_tool_provider_id, api_tool.name AS api_tool_name, api_tool.description AS api_tool_description, api_tool.url AS api_tool_url, api_tool.method AS api_tool_method, api_tool.parameters AS api_tool_parameters, api_tool.updated_at AS api_tool_updated_at, api_tool.created_at AS api_tool_created_at 
+FROM api_tool 
+WHERE api_tool.provider_id = %(provider_id_1)s::UUID AND api_tool.name = %(name_1)s
+[2024-09-28 16:10:40,098.098] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00019s] {'provider_id_1': 'd72bb9d7-8794-4caf-bd60-1f992c537065', 'name_1': 'YoudaoSuggest'}
+[2024-09-28 16:10:40,098.098] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00019s] {'provider_id_1': 'd72bb9d7-8794-4caf-bd60-1f992c537065', 'name_1': 'YoudaoSuggest'}
+[2024-09-28 16:10:40,100.100] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool_provider.id AS api_tool_provider_id, api_tool_provider.account_id AS api_tool_provider_account_id, api_tool_provider.name AS api_tool_provider_name, api_tool_provider.icon AS api_tool_provider_icon, api_tool_provider.description AS api_tool_provider_description, api_tool_provider.openapi_schema AS api_tool_provider_openapi_schema, api_tool_provider.headers AS api_tool_provider_headers, api_tool_provider.updated_at AS api_tool_provider_updated_at, api_tool_provider.created_at AS api_tool_provider_created_at 
+FROM api_tool_provider 
+WHERE api_tool_provider.id = %(pk_1)s::UUID
+[2024-09-28 16:10:40,100.100] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool_provider.id AS api_tool_provider_id, api_tool_provider.account_id AS api_tool_provider_account_id, api_tool_provider.name AS api_tool_provider_name, api_tool_provider.icon AS api_tool_provider_icon, api_tool_provider.description AS api_tool_provider_description, api_tool_provider.openapi_schema AS api_tool_provider_openapi_schema, api_tool_provider.headers AS api_tool_provider_headers, api_tool_provider.updated_at AS api_tool_provider_updated_at, api_tool_provider.created_at AS api_tool_provider_created_at 
+FROM api_tool_provider 
+WHERE api_tool_provider.id = %(pk_1)s::UUID
+[2024-09-28 16:10:40,100.100] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00017s] {'pk_1': UUID('d72bb9d7-8794-4caf-bd60-1f992c537065')}
+[2024-09-28 16:10:40,100.100] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00017s] {'pk_1': UUID('d72bb9d7-8794-4caf-bd60-1f992c537065')}
+[2024-09-28 16:10:40,247.247] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-09-28 16:10:40,247.247] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-09-28 16:10:40,247.247] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [28/Sep/2024 16:10:40] "GET /ping HTTP/1.1" 200 -
+[2024-09-28 16:10:40,247.247] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [28/Sep/2024 16:10:40] "GET /ping HTTP/1.1" 200 -
+[2024-09-28 16:12:37,218.218] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 16:12:37,218.218] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\extension\\celery_extension.py', reloading
+[2024-09-28 16:12:37,455.455] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 16:12:40,107.107] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 16:12:40,110.110] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 16:14:42,140.140] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\task\\demo_task.py', reloading
+[2024-09-28 16:14:42,369.369] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 16:14:45,034.034] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 16:14:45,037.037] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 16:14:59,655.655] base.py -> _exec_single_context line:1903 [INFO]: select pg_catalog.version()
+[2024-09-28 16:14:59,656.656] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:14:59,656.656] base.py -> _exec_single_context line:1903 [INFO]: select current_schema()
+[2024-09-28 16:14:59,656.656] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:14:59,657.657] base.py -> _exec_single_context line:1903 [INFO]: show standard_conforming_strings
+[2024-09-28 16:14:59,657.657] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:14:59,658.658] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-09-28 16:14:59,659.659] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool.id AS api_tool_id, api_tool.account_id AS api_tool_account_id, api_tool.provider_id AS api_tool_provider_id, api_tool.name AS api_tool_name, api_tool.description AS api_tool_description, api_tool.url AS api_tool_url, api_tool.method AS api_tool_method, api_tool.parameters AS api_tool_parameters, api_tool.updated_at AS api_tool_updated_at, api_tool.created_at AS api_tool_created_at 
+FROM api_tool 
+WHERE api_tool.provider_id = %(provider_id_1)s::UUID AND api_tool.name = %(name_1)s
+[2024-09-28 16:14:59,659.659] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00017s] {'provider_id_1': 'd72bb9d7-8794-4caf-bd60-1f992c537065', 'name_1': 'YoudaoSuggest'}
+[2024-09-28 16:14:59,662.662] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool_provider.id AS api_tool_provider_id, api_tool_provider.account_id AS api_tool_provider_account_id, api_tool_provider.name AS api_tool_provider_name, api_tool_provider.icon AS api_tool_provider_icon, api_tool_provider.description AS api_tool_provider_description, api_tool_provider.openapi_schema AS api_tool_provider_openapi_schema, api_tool_provider.headers AS api_tool_provider_headers, api_tool_provider.updated_at AS api_tool_provider_updated_at, api_tool_provider.created_at AS api_tool_provider_created_at 
+FROM api_tool_provider 
+WHERE api_tool_provider.id = %(pk_1)s::UUID
+[2024-09-28 16:14:59,662.662] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00016s] {'pk_1': UUID('d72bb9d7-8794-4caf-bd60-1f992c537065')}
+[2024-09-28 16:14:59,793.793] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-09-28 16:14:59,794.794] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [28/Sep/2024 16:14:59] "GET /ping HTTP/1.1" 200 -
+[2024-09-28 16:15:32,138.138] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\task\\demo_task.py', reloading
+[2024-09-28 16:15:32,416.416] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 16:15:35,227.227] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 16:15:35,229.229] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 16:17:37,096.096] base.py -> _exec_single_context line:1903 [INFO]: select pg_catalog.version()
+[2024-09-28 16:17:37,096.096] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:17:37,097.097] base.py -> _exec_single_context line:1903 [INFO]: select current_schema()
+[2024-09-28 16:17:37,097.097] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:17:37,110.110] base.py -> _exec_single_context line:1903 [INFO]: show standard_conforming_strings
+[2024-09-28 16:17:37,110.110] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 16:17:37,111.111] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-09-28 16:17:37,113.113] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool.id AS api_tool_id, api_tool.account_id AS api_tool_account_id, api_tool.provider_id AS api_tool_provider_id, api_tool.name AS api_tool_name, api_tool.description AS api_tool_description, api_tool.url AS api_tool_url, api_tool.method AS api_tool_method, api_tool.parameters AS api_tool_parameters, api_tool.updated_at AS api_tool_updated_at, api_tool.created_at AS api_tool_created_at 
+FROM api_tool 
+WHERE api_tool.provider_id = %(provider_id_1)s::UUID AND api_tool.name = %(name_1)s
+[2024-09-28 16:17:37,113.113] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00017s] {'provider_id_1': 'd72bb9d7-8794-4caf-bd60-1f992c537065', 'name_1': 'YoudaoSuggest'}
+[2024-09-28 16:17:37,116.116] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool_provider.id AS api_tool_provider_id, api_tool_provider.account_id AS api_tool_provider_account_id, api_tool_provider.name AS api_tool_provider_name, api_tool_provider.icon AS api_tool_provider_icon, api_tool_provider.description AS api_tool_provider_description, api_tool_provider.openapi_schema AS api_tool_provider_openapi_schema, api_tool_provider.headers AS api_tool_provider_headers, api_tool_provider.updated_at AS api_tool_provider_updated_at, api_tool_provider.created_at AS api_tool_provider_created_at 
+FROM api_tool_provider 
+WHERE api_tool_provider.id = %(pk_1)s::UUID
+[2024-09-28 16:17:37,116.116] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00014s] {'pk_1': UUID('d72bb9d7-8794-4caf-bd60-1f992c537065')}
+[2024-09-28 16:17:37,272.272] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-09-28 16:17:37,273.273] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [28/Sep/2024 16:17:37] "GET /ping HTTP/1.1" 200 -
+[2024-09-28 17:05:22,349.349] _internal.py -> _log line:96 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-09-28 17:05:22,349.349] _internal.py -> _log line:96 [INFO]: [33mPress CTRL+C to quit[0m
+[2024-09-28 17:05:22,350.350] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-09-28 17:05:25,136.136] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-09-28 17:05:25,139.139] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-09-28 17:09:47,347.347] base.py -> _exec_single_context line:1903 [INFO]: select pg_catalog.version()
+[2024-09-28 17:09:47,347.347] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 17:09:47,351.351] base.py -> _exec_single_context line:1903 [INFO]: select current_schema()
+[2024-09-28 17:09:47,352.352] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 17:09:47,352.352] base.py -> _exec_single_context line:1903 [INFO]: show standard_conforming_strings
+[2024-09-28 17:09:47,352.352] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-09-28 17:09:47,357.357] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-09-28 17:09:47,358.358] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool.id AS api_tool_id, api_tool.account_id AS api_tool_account_id, api_tool.provider_id AS api_tool_provider_id, api_tool.name AS api_tool_name, api_tool.description AS api_tool_description, api_tool.url AS api_tool_url, api_tool.method AS api_tool_method, api_tool.parameters AS api_tool_parameters, api_tool.updated_at AS api_tool_updated_at, api_tool.created_at AS api_tool_created_at 
+FROM api_tool 
+WHERE api_tool.provider_id = %(provider_id_1)s::UUID AND api_tool.name = %(name_1)s
+[2024-09-28 17:09:47,359.359] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00031s] {'provider_id_1': 'd72bb9d7-8794-4caf-bd60-1f992c537065', 'name_1': 'YoudaoSuggest'}
+[2024-09-28 17:09:47,363.363] base.py -> _exec_single_context line:1903 [INFO]: SELECT api_tool_provider.id AS api_tool_provider_id, api_tool_provider.account_id AS api_tool_provider_account_id, api_tool_provider.name AS api_tool_provider_name, api_tool_provider.icon AS api_tool_provider_icon, api_tool_provider.description AS api_tool_provider_description, api_tool_provider.openapi_schema AS api_tool_provider_openapi_schema, api_tool_provider.headers AS api_tool_provider_headers, api_tool_provider.updated_at AS api_tool_provider_updated_at, api_tool_provider.created_at AS api_tool_provider_created_at 
+FROM api_tool_provider 
+WHERE api_tool_provider.id = %(pk_1)s::UUID
+[2024-09-28 17:09:47,363.363] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00023s] {'pk_1': UUID('d72bb9d7-8794-4caf-bd60-1f992c537065')}
+[2024-09-28 17:09:47,521.521] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-09-28 17:09:47,522.522] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [28/Sep/2024 17:09:47] "GET /ping HTTP/1.1" 200 -

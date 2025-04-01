@@ -1,0 +1,994 @@
+[2024-10-23 09:52:34,066.066] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 09:52:34,071.071] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 09:54:08,593.593] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\tools\\builtin_tools\\categories\\builtin_category_manager.py', reloading
+[2024-10-23 09:54:13,528.528] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 09:54:13,531.531] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 09:54:36,658.658] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:54:36] "GET /builtin-tools HTTP/1.1" 200 -
+[2024-10-23 09:54:39,640.640] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: 'entities'
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\builtin_tool_handler.py", line 41, in get_categories
+    categories = self.builtin_tool_service.get_categories()
+  File "D:\Code\llmops\llmops-api\internal\service\builtin_tool_service.py", line 119, in get_categories
+    return [{
+  File "D:\Code\llmops\llmops-api\internal\service\builtin_tool_service.py", line 120, in <listcomp>
+    "name": category["entity"].name,
+KeyError: 'entities'
+[2024-10-23 09:54:39,651.651] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:54:39] "[35m[1mGET /builtin-tools/categories HTTP/1.1[0m" 500 -
+[2024-10-23 09:54:55,601.601] _internal.py -> _log line:96 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-10-23 09:54:55,601.601] _internal.py -> _log line:96 [INFO]: [33mPress CTRL+C to quit[0m
+[2024-10-23 09:54:55,602.602] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 09:55:00,444.444] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 09:55:00,447.447] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 09:55:00,604.604] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:55:00] "GET /builtin-tools/categories HTTP/1.1" 200 -
+[2024-10-23 09:55:13,565.565] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:55:13] "GET /builtin-tools/google/icon HTTP/1.1" 200 -
+[2024-10-23 09:56:07,203.203] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:56:07] "POST /apps/e0d13c78-870b-46df-b2f5-693ae9d5d727/debug HTTP/1.1" 200 -
+[2024-10-23 09:56:16,711.711] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:56:16] "POST /apps/e0d13c78-870b-46df-b2f5-693ae9d5d727/debug HTTP/1.1" 200 -
+[2024-10-23 09:56:34,709.709] base.py -> _exec_single_context line:1903 [INFO]: select pg_catalog.version()
+[2024-10-23 09:56:34,709.709] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-10-23 09:56:34,710.710] base.py -> _exec_single_context line:1903 [INFO]: select current_schema()
+[2024-10-23 09:56:34,710.710] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-10-23 09:56:34,710.710] base.py -> _exec_single_context line:1903 [INFO]: show standard_conforming_strings
+[2024-10-23 09:56:34,711.711] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-10-23 09:56:34,711.711] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:56:34,712.712] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.id = %(pk_1)s::UUID
+[2024-10-23 09:56:34,712.712] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00017s] {'pk_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:56:34,757.757] base.py -> _exec_single_context line:1903 [INFO]: SELECT count(document.id) AS count_1 
+FROM document 
+WHERE document.dataset_id = %(dataset_id_1)s::UUID
+[2024-10-23 09:56:34,757.757] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00025s] {'dataset_id_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:56:34,861.861] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.dataset_id = %(dataset_id_1)s::UUID
+[2024-10-23 09:56:34,861.861] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00017s] {'coalesce_2': 0, 'dataset_id_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:56:35,915.915] base.py -> _exec_single_context line:1903 [INFO]: SELECT count(app_dataset_join.id) AS count_1 
+FROM app_dataset_join 
+WHERE app_dataset_join.dataset_id = %(dataset_id_1)s::UUID
+[2024-10-23 09:56:35,915.915] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00017s] {'dataset_id_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:56:35,940.940] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(document.character_count), %(coalesce_2)s) AS coalesce_1 
+FROM document 
+WHERE document.dataset_id = %(dataset_id_1)s::UUID
+[2024-10-23 09:56:35,940.940] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00017s] {'coalesce_2': 0, 'dataset_id_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:56:35,941.941] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:56:35,942.942] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:56:35] "GET /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89 HTTP/1.1" 200 -
+[2024-10-23 09:56:38,652.652] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:56:38,652.652] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.id = %(pk_1)s::UUID
+[2024-10-23 09:56:38,653.653] base.py -> _exec_single_context line:1908 [INFO]: [cached since 3.94s ago] {'pk_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:56:38,654.654] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.account_id = %(account_id_1)s::UUID AND dataset.name = %(name_1)s AND dataset.id != %(id_1)s::UUID
+[2024-10-23 09:56:38,654.654] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00015s] {'account_id_1': '46db30d1-3199-4e79-a0cd-abf12fa6858f', 'name_1': '慕课LLMOps项目', 'id_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:56:38,655.655] base.py -> _commit_impl line:1146 [INFO]: COMMIT
+[2024-10-23 09:56:38,656.656] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:56:38] "POST /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89 HTTP/1.1" 200 -
+[2024-10-23 09:56:40,964.964] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:56:40,965.965] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.account_id = %(account_id_1)s::UUID ORDER BY dataset.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s
+[2024-10-23 09:56:40,965.965] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00022s] {'account_id_1': '46db30d1-3199-4e79-a0cd-abf12fa6858f', 'param_1': 20, 'param_2': 0}
+[2024-10-23 09:56:40,966.966] base.py -> _exec_single_context line:1903 [INFO]: SELECT count(*) AS count_1 
+FROM (SELECT dataset.id AS id, dataset.account_id AS account_id, dataset.name AS name, dataset.icon AS icon, dataset.description AS description, dataset.updated_at AS updated_at, dataset.created_at AS created_at 
+FROM dataset 
+WHERE dataset.account_id = %(account_id_1)s::UUID) AS anon_1
+[2024-10-23 09:56:40,967.967] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00021s] {'account_id_1': '46db30d1-3199-4e79-a0cd-abf12fa6858f'}
+[2024-10-23 09:56:40,967.967] base.py -> _exec_single_context line:1903 [INFO]: SELECT count(document.id) AS count_1 
+FROM document 
+WHERE document.dataset_id = %(dataset_id_1)s::UUID
+[2024-10-23 09:56:40,968.968] base.py -> _exec_single_context line:1908 [INFO]: [cached since 6.211s ago] {'dataset_id_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:56:40,968.968] base.py -> _exec_single_context line:1903 [INFO]: SELECT count(app_dataset_join.id) AS count_1 
+FROM app_dataset_join 
+WHERE app_dataset_join.dataset_id = %(dataset_id_1)s::UUID
+[2024-10-23 09:56:40,968.968] base.py -> _exec_single_context line:1908 [INFO]: [cached since 5.053s ago] {'dataset_id_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:56:40,969.969] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(document.character_count), %(coalesce_2)s) AS coalesce_1 
+FROM document 
+WHERE document.dataset_id = %(dataset_id_1)s::UUID
+[2024-10-23 09:56:40,969.969] base.py -> _exec_single_context line:1908 [INFO]: [cached since 5.029s ago] {'coalesce_2': 0, 'dataset_id_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:56:40,970.970] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:56:40,970.970] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:56:40] "GET /datasets?search_word=&current_page=1&page_size=20 HTTP/1.1" 200 -
+[2024-10-23 09:56:44,755.755] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:56:44,755.755] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.id = %(pk_1)s::UUID
+[2024-10-23 09:56:44,755.755] base.py -> _exec_single_context line:1908 [INFO]: [cached since 10.04s ago] {'pk_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:56:44,757.757] base.py -> _exec_single_context line:1903 [INFO]: SELECT upload_file.id AS upload_file_id, upload_file.account_id AS upload_file_account_id, upload_file.name AS upload_file_name, upload_file.key AS upload_file_key, upload_file.size AS upload_file_size, upload_file.extension AS upload_file_extension, upload_file.mime_type AS upload_file_mime_type, upload_file.hash AS upload_file_hash, upload_file.updated_at AS upload_file_updated_at, upload_file.created_at AS upload_file_created_at 
+FROM upload_file 
+WHERE upload_file.account_id = %(account_id_1)s::UUID AND upload_file.id IN (%(id_1_1)s::UUID)
+[2024-10-23 09:56:44,757.757] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00018s] {'account_id_1': '46db30d1-3199-4e79-a0cd-abf12fa6858f', 'id_1_1': '1f913c05-8783-4de4-a2c7-c551fa17d0f6'}
+[2024-10-23 09:56:44,785.785] base.py -> _exec_single_context line:1903 [INFO]: INSERT INTO process_rule (account_id, dataset_id, mode, rule) VALUES (%(account_id)s::UUID, %(dataset_id)s::UUID, %(mode)s, %(rule)s) RETURNING process_rule.id, process_rule.updated_at, process_rule.created_at
+[2024-10-23 09:56:44,785.785] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00020s] {'account_id': '46db30d1-3199-4e79-a0cd-abf12fa6858f', 'dataset_id': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89'), 'mode': 'automatic', 'rule': '{"pre_process_rules": [{"id": "remove_extra_space", "enabled": true}, {"id": "remove_url_and_email", "enabled": true}], "segment": {"separators": ["\ ... (15 characters truncated) ... "\\u3002|\\uff01|\\uff1f", "\\\\.\\\\s|\\\\!\\\\s|\\\\?\\\\s", "\\uff1b|;\\\\s", "\\uff0c|,\\\\s", " ", ""], "chunk_size": 500, "chunk_overlap": 50}}'}
+[2024-10-23 09:56:44,964.964] base.py -> _commit_impl line:1146 [INFO]: COMMIT
+[2024-10-23 09:56:44,983.983] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:56:44,984.984] base.py -> _exec_single_context line:1903 [INFO]: SELECT document.id AS document_id, document.account_id AS document_account_id, document.dataset_id AS document_dataset_id, document.upload_file_id AS document_upload_file_id, document.process_rule_id AS document_process_rule_id, document.batch AS document_batch, document.name AS document_name, document.position AS document_position, document.character_count AS document_character_count, document.token_count AS document_token_count, document.processing_started_at AS document_processing_started_at, document.parsing_completed_at AS document_parsing_completed_at, document.splitting_completed_at AS document_splitting_completed_at, document.indexing_completed_at AS document_indexing_completed_at, document.completed_at AS document_completed_at, document.stopped_at AS document_stopped_at, document.error AS document_error, document.enabled AS document_enabled, document.disabled_at AS document_disabled_at, document.status AS document_status, document.updated_at AS document_updated_at, document.created_at AS document_created_at 
+FROM document 
+WHERE document.dataset_id = %(dataset_id_1)s::UUID ORDER BY document.position DESC 
+ LIMIT %(param_1)s
+[2024-10-23 09:56:44,984.984] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00016s] {'dataset_id_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89'), 'param_1': 1}
+[2024-10-23 09:56:45,054.054] base.py -> _exec_single_context line:1903 [INFO]: SELECT upload_file.id AS upload_file_id, upload_file.account_id AS upload_file_account_id, upload_file.name AS upload_file_name, upload_file.key AS upload_file_key, upload_file.size AS upload_file_size, upload_file.extension AS upload_file_extension, upload_file.mime_type AS upload_file_mime_type, upload_file.hash AS upload_file_hash, upload_file.updated_at AS upload_file_updated_at, upload_file.created_at AS upload_file_created_at 
+FROM upload_file 
+WHERE upload_file.id = %(pk_1)s::UUID
+[2024-10-23 09:56:45,055.055] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00019s] {'pk_1': UUID('1f913c05-8783-4de4-a2c7-c551fa17d0f6')}
+[2024-10-23 09:56:45,056.056] base.py -> _exec_single_context line:1903 [INFO]: SELECT process_rule.id AS process_rule_id, process_rule.account_id AS process_rule_account_id, process_rule.dataset_id AS process_rule_dataset_id, process_rule.mode AS process_rule_mode, process_rule.rule AS process_rule_rule, process_rule.updated_at AS process_rule_updated_at, process_rule.created_at AS process_rule_created_at 
+FROM process_rule 
+WHERE process_rule.id = %(pk_1)s::UUID
+[2024-10-23 09:56:45,056.056] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00017s] {'pk_1': UUID('449f3682-bac4-4bfb-b867-ed723fe21c36')}
+[2024-10-23 09:56:45,072.072] base.py -> _exec_single_context line:1903 [INFO]: INSERT INTO document (account_id, dataset_id, upload_file_id, process_rule_id, batch, name, position, processing_started_at, parsing_completed_at, splitting_completed_at, indexing_completed_at, completed_at, stopped_at, disabled_at) VALUES (%(account_id)s::UUID, %(dataset_id)s::UUID, %(upload_file_id)s::UUID, %(process_rule_id)s::UUID, %(batch)s, %(name)s, %(position)s, %(processing_started_at)s, %(parsing_completed_at)s, %(splitting_completed_at)s, %(indexing_completed_at)s, %(completed_at)s, %(stopped_at)s, %(disabled_at)s) RETURNING document.id, document.character_count, document.token_count, document.error, document.enabled, document.status, document.updated_at, document.created_at
+[2024-10-23 09:56:45,072.072] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00024s] {'account_id': '46db30d1-3199-4e79-a0cd-abf12fa6858f', 'dataset_id': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89'), 'upload_file_id': UUID('1f913c05-8783-4de4-a2c7-c551fa17d0f6'), 'process_rule_id': UUID('449f3682-bac4-4bfb-b867-ed723fe21c36'), 'batch': '20241023095644119500', 'name': 'LLMOps 项目提示词大全.md', 'position': 105, 'processing_started_at': None, 'parsing_completed_at': None, 'splitting_completed_at': None, 'indexing_completed_at': None, 'completed_at': None, 'stopped_at': None, 'disabled_at': None}
+[2024-10-23 09:56:45,090.090] base.py -> _commit_impl line:1146 [INFO]: COMMIT
+[2024-10-23 09:56:45,094.094] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:56:45,095.095] base.py -> _exec_single_context line:1903 [INFO]: SELECT document.id AS document_id, document.account_id AS document_account_id, document.dataset_id AS document_dataset_id, document.upload_file_id AS document_upload_file_id, document.process_rule_id AS document_process_rule_id, document.batch AS document_batch, document.name AS document_name, document.position AS document_position, document.character_count AS document_character_count, document.token_count AS document_token_count, document.processing_started_at AS document_processing_started_at, document.parsing_completed_at AS document_parsing_completed_at, document.splitting_completed_at AS document_splitting_completed_at, document.indexing_completed_at AS document_indexing_completed_at, document.completed_at AS document_completed_at, document.stopped_at AS document_stopped_at, document.error AS document_error, document.enabled AS document_enabled, document.disabled_at AS document_disabled_at, document.status AS document_status, document.updated_at AS document_updated_at, document.created_at AS document_created_at 
+FROM document 
+WHERE document.id = %(pk_1)s::UUID
+[2024-10-23 09:56:45,095.095] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00013s] {'pk_1': UUID('ad4afdf4-141a-4d29-ab00-20a0d2728566')}
+[2024-10-23 09:56:45,143.143] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:56:45,143.143] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:56:45] "POST /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89/documents HTTP/1.1" 200 -
+[2024-10-23 09:56:59,144.144] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:56:59,145.145] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.id = %(pk_1)s::UUID
+[2024-10-23 09:56:59,145.145] base.py -> _exec_single_context line:1908 [INFO]: [cached since 24.43s ago] {'pk_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:56:59,146.146] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.id IN (%(id_1_1)s::UUID) AND dataset.account_id = %(account_id_1)s::UUID
+[2024-10-23 09:56:59,146.146] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00018s] {'account_id_1': '46db30d1-3199-4e79-a0cd-abf12fa6858f', 'id_1_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:57:06,101.101] __init__.py -> initialize line:113 [DEBUG]: Building prefix dict from the default dictionary ...
+[2024-10-23 09:57:06,102.102] __init__.py -> initialize line:132 [DEBUG]: Loading model from cache C:\Users\Administrator\AppData\Local\Temp\jieba.cache
+[2024-10-23 09:57:06,452.452] __init__.py -> initialize line:164 [DEBUG]: Loading model cost 0.351 seconds.
+[2024-10-23 09:57:06,452.452] __init__.py -> initialize line:166 [DEBUG]: Prefix dict has been built successfully.
+[2024-10-23 09:57:06,453.453] base.py -> _exec_single_context line:1903 [INFO]: SELECT keyword_table.keyword_table AS keyword_table_keyword_table 
+FROM keyword_table 
+WHERE keyword_table.dataset_id IN (%(dataset_id_1_1)s::UUID)
+[2024-10-23 09:57:06,453.453] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00018s] {'dataset_id_1_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:57:06,463.463] base.py -> _exec_single_context line:1903 [INFO]: SELECT segment.id AS segment_id, segment.account_id AS segment_account_id, segment.dataset_id AS segment_dataset_id, segment.document_id AS segment_document_id, segment.node_id AS segment_node_id, segment.position AS segment_position, segment.content AS segment_content, segment.character_count AS segment_character_count, segment.token_count AS segment_token_count, segment.keywords AS segment_keywords, segment.hash AS segment_hash, segment.hit_count AS segment_hit_count, segment.enabled AS segment_enabled, segment.disabled_at AS segment_disabled_at, segment.processing_started_at AS segment_processing_started_at, segment.indexing_completed_at AS segment_indexing_completed_at, segment.completed_at AS segment_completed_at, segment.stopped_at AS segment_stopped_at, segment.error AS segment_error, segment.status AS segment_status, segment.updated_at AS segment_updated_at, segment.created_at AS segment_created_at 
+FROM segment 
+WHERE segment.id IN (%(id_1_1)s::UUID, %(id_1_2)s::UUID, %(id_1_3)s::UUID, %(id_1_4)s::UUID, %(id_1_5)s::UUID, %(id_1_6)s::UUID, %(id_1_7)s::UUID, %(id_1_8)s::UUID, %(id_1_9)s::UUID, %(id_1_10)s::UUID)
+[2024-10-23 09:57:06,463.463] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00023s] {'id_1_1': 'c80fdb0e-0ec2-451e-ba48-1ddc9f12ef16', 'id_1_2': '8b4e76fc-edf7-45d0-94f0-cb92899134e1', 'id_1_3': '716b0920-4a32-4ddf-b88a-d34236010e1c', 'id_1_4': '669eb7ba-e419-43db-9b7b-7bfa8a7790ef', 'id_1_5': '562d896f-da74-4ff3-9901-27ca9764230a', 'id_1_6': 'ccca5cf9-7961-4f41-baa7-725fd2f57d54', 'id_1_7': 'b78b863c-8594-42fa-a396-53a0ab185c47', 'id_1_8': '90ec227d-479c-4fac-bd79-312bb637bf3f', 'id_1_9': '9438f82c-e335-446c-b8f0-5047b8fe3e31', 'id_1_10': '2cfe59e0-dfb4-4360-9032-235fe9a5c2e4'}
+[2024-10-23 09:57:06,466.466] base.py -> _exec_single_context line:1903 [INFO]: INSERT INTO dataset_query (dataset_id, query, source, source_app_id, created_by) VALUES (%(dataset_id)s::UUID, %(query)s, %(source)s, %(source_app_id)s::UUID, %(created_by)s::UUID) RETURNING dataset_query.id, dataset_query.updated_at, dataset_query.created_at
+[2024-10-23 09:57:06,466.466] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00016s] {'dataset_id': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89'), 'query': '想学习flask，有什么建议么？', 'source': <RetrievalSource.HIT_TESTING: 'hit_testing'>, 'source_app_id': None, 'created_by': '46db30d1-3199-4e79-a0cd-abf12fa6858f'}
+[2024-10-23 09:57:06,608.608] base.py -> _commit_impl line:1146 [INFO]: COMMIT
+[2024-10-23 09:57:06,610.610] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:06,610.610] base.py -> _exec_single_context line:1903 [INFO]: INSERT INTO dataset_query (dataset_id, query, source, source_app_id, created_by) VALUES (%(dataset_id)s::UUID, %(query)s, %(source)s, %(source_app_id)s::UUID, %(created_by)s::UUID) RETURNING dataset_query.id, dataset_query.updated_at, dataset_query.created_at
+[2024-10-23 09:57:06,610.610] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.1444s ago] {'dataset_id': 'f3f28f75-8e60-4eba-b6df-4d1b390bbd89', 'query': '想学习flask，有什么建议么？', 'source': <RetrievalSource.HIT_TESTING: 'hit_testing'>, 'source_app_id': None, 'created_by': '46db30d1-3199-4e79-a0cd-abf12fa6858f'}
+[2024-10-23 09:57:06,611.611] base.py -> _commit_impl line:1146 [INFO]: COMMIT
+[2024-10-23 09:57:06,612.612] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:06,613.613] base.py -> _exec_single_context line:1903 [INFO]: UPDATE segment SET hit_count=(segment.hit_count + %(hit_count_1)s) WHERE segment.id IN (%(id_1_1)s::UUID, %(id_1_2)s::UUID)
+[2024-10-23 09:57:06,613.613] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00015s] {'hit_count_1': 1, 'id_1_1': UUID('6b9ec6d2-00a7-4087-add0-4e1eac82514a'), 'id_1_2': 'c80fdb0e-0ec2-451e-ba48-1ddc9f12ef16'}
+[2024-10-23 09:57:06,613.613] base.py -> _commit_impl line:1146 [INFO]: COMMIT
+[2024-10-23 09:57:06,614.614] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:06,615.615] base.py -> _exec_single_context line:1903 [INFO]: SELECT segment.id AS segment_id, segment.account_id AS segment_account_id, segment.dataset_id AS segment_dataset_id, segment.document_id AS segment_document_id, segment.node_id AS segment_node_id, segment.position AS segment_position, segment.content AS segment_content, segment.character_count AS segment_character_count, segment.token_count AS segment_token_count, segment.keywords AS segment_keywords, segment.hash AS segment_hash, segment.hit_count AS segment_hit_count, segment.enabled AS segment_enabled, segment.disabled_at AS segment_disabled_at, segment.processing_started_at AS segment_processing_started_at, segment.indexing_completed_at AS segment_indexing_completed_at, segment.completed_at AS segment_completed_at, segment.stopped_at AS segment_stopped_at, segment.error AS segment_error, segment.status AS segment_status, segment.updated_at AS segment_updated_at, segment.created_at AS segment_created_at 
+FROM segment 
+WHERE segment.id IN (%(id_1_1)s::UUID, %(id_1_2)s::UUID)
+[2024-10-23 09:57:06,615.615] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.1518s ago] {'id_1_1': '6b9ec6d2-00a7-4087-add0-4e1eac82514a', 'id_1_2': 'c80fdb0e-0ec2-451e-ba48-1ddc9f12ef16'}
+[2024-10-23 09:57:06,616.616] base.py -> _exec_single_context line:1903 [INFO]: SELECT document.id AS document_id, document.account_id AS document_account_id, document.dataset_id AS document_dataset_id, document.upload_file_id AS document_upload_file_id, document.process_rule_id AS document_process_rule_id, document.batch AS document_batch, document.name AS document_name, document.position AS document_position, document.character_count AS document_character_count, document.token_count AS document_token_count, document.processing_started_at AS document_processing_started_at, document.parsing_completed_at AS document_parsing_completed_at, document.splitting_completed_at AS document_splitting_completed_at, document.indexing_completed_at AS document_indexing_completed_at, document.completed_at AS document_completed_at, document.stopped_at AS document_stopped_at, document.error AS document_error, document.enabled AS document_enabled, document.disabled_at AS document_disabled_at, document.status AS document_status, document.updated_at AS document_updated_at, document.created_at AS document_created_at 
+FROM document 
+WHERE document.id = %(pk_1)s::UUID
+[2024-10-23 09:57:06,617.617] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00011s] {'pk_1': UUID('214edf94-97a3-453d-b8fd-a578c236629b')}
+[2024-10-23 09:57:06,618.618] base.py -> _exec_single_context line:1903 [INFO]: SELECT upload_file.id AS upload_file_id, upload_file.account_id AS upload_file_account_id, upload_file.name AS upload_file_name, upload_file.key AS upload_file_key, upload_file.size AS upload_file_size, upload_file.extension AS upload_file_extension, upload_file.mime_type AS upload_file_mime_type, upload_file.hash AS upload_file_hash, upload_file.updated_at AS upload_file_updated_at, upload_file.created_at AS upload_file_created_at 
+FROM upload_file 
+WHERE upload_file.id = %(id_1)s::UUID
+[2024-10-23 09:57:06,618.618] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00012s] {'id_1': UUID('1f913c05-8783-4de4-a2c7-c551fa17d0f6')}
+[2024-10-23 09:57:06,619.619] base.py -> _exec_single_context line:1903 [INFO]: SELECT document.id AS document_id, document.account_id AS document_account_id, document.dataset_id AS document_dataset_id, document.upload_file_id AS document_upload_file_id, document.process_rule_id AS document_process_rule_id, document.batch AS document_batch, document.name AS document_name, document.position AS document_position, document.character_count AS document_character_count, document.token_count AS document_token_count, document.processing_started_at AS document_processing_started_at, document.parsing_completed_at AS document_parsing_completed_at, document.splitting_completed_at AS document_splitting_completed_at, document.indexing_completed_at AS document_indexing_completed_at, document.completed_at AS document_completed_at, document.stopped_at AS document_stopped_at, document.error AS document_error, document.enabled AS document_enabled, document.disabled_at AS document_disabled_at, document.status AS document_status, document.updated_at AS document_updated_at, document.created_at AS document_created_at 
+FROM document 
+WHERE document.id = %(pk_1)s::UUID
+[2024-10-23 09:57:06,619.619] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.002152s ago] {'pk_1': UUID('c3761169-a61c-4702-946a-abe46531a0dc')}
+[2024-10-23 09:57:06,619.619] base.py -> _exec_single_context line:1903 [INFO]: SELECT upload_file.id AS upload_file_id, upload_file.account_id AS upload_file_account_id, upload_file.name AS upload_file_name, upload_file.key AS upload_file_key, upload_file.size AS upload_file_size, upload_file.extension AS upload_file_extension, upload_file.mime_type AS upload_file_mime_type, upload_file.hash AS upload_file_hash, upload_file.updated_at AS upload_file_updated_at, upload_file.created_at AS upload_file_created_at 
+FROM upload_file 
+WHERE upload_file.id = %(id_1)s::UUID
+[2024-10-23 09:57:06,619.619] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.001519s ago] {'id_1': UUID('1f913c05-8783-4de4-a2c7-c551fa17d0f6')}
+[2024-10-23 09:57:06,620.620] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:57:06,620.620] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:57:06] "POST /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89/hit HTTP/1.1" 200 -
+[2024-10-23 09:57:17,901.901] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:17,901.901] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.id = %(pk_1)s::UUID
+[2024-10-23 09:57:17,901.901] base.py -> _exec_single_context line:1908 [INFO]: [cached since 43.19s ago] {'pk_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:57:17,902.902] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.id IN (%(id_1_1)s::UUID) AND dataset.account_id = %(account_id_1)s::UUID
+[2024-10-23 09:57:17,902.902] base.py -> _exec_single_context line:1908 [INFO]: [cached since 18.76s ago] {'account_id_1': '46db30d1-3199-4e79-a0cd-abf12fa6858f', 'id_1_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:57:22,260.260] base.py -> _exec_single_context line:1903 [INFO]: SELECT keyword_table.keyword_table AS keyword_table_keyword_table 
+FROM keyword_table 
+WHERE keyword_table.dataset_id IN (%(dataset_id_1_1)s::UUID)
+[2024-10-23 09:57:22,260.260] base.py -> _exec_single_context line:1908 [INFO]: [cached since 15.81s ago] {'dataset_id_1_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:57:22,267.267] base.py -> _exec_single_context line:1903 [INFO]: SELECT segment.id AS segment_id, segment.account_id AS segment_account_id, segment.dataset_id AS segment_dataset_id, segment.document_id AS segment_document_id, segment.node_id AS segment_node_id, segment.position AS segment_position, segment.content AS segment_content, segment.character_count AS segment_character_count, segment.token_count AS segment_token_count, segment.keywords AS segment_keywords, segment.hash AS segment_hash, segment.hit_count AS segment_hit_count, segment.enabled AS segment_enabled, segment.disabled_at AS segment_disabled_at, segment.processing_started_at AS segment_processing_started_at, segment.indexing_completed_at AS segment_indexing_completed_at, segment.completed_at AS segment_completed_at, segment.stopped_at AS segment_stopped_at, segment.error AS segment_error, segment.status AS segment_status, segment.updated_at AS segment_updated_at, segment.created_at AS segment_created_at 
+FROM segment 
+WHERE segment.id IN (%(id_1_1)s::UUID, %(id_1_2)s::UUID, %(id_1_3)s::UUID, %(id_1_4)s::UUID, %(id_1_5)s::UUID, %(id_1_6)s::UUID, %(id_1_7)s::UUID, %(id_1_8)s::UUID, %(id_1_9)s::UUID, %(id_1_10)s::UUID)
+[2024-10-23 09:57:22,268.268] base.py -> _exec_single_context line:1908 [INFO]: [cached since 15.8s ago] {'id_1_1': 'c80fdb0e-0ec2-451e-ba48-1ddc9f12ef16', 'id_1_2': '8b4e76fc-edf7-45d0-94f0-cb92899134e1', 'id_1_3': '716b0920-4a32-4ddf-b88a-d34236010e1c', 'id_1_4': '669eb7ba-e419-43db-9b7b-7bfa8a7790ef', 'id_1_5': '562d896f-da74-4ff3-9901-27ca9764230a', 'id_1_6': 'ccca5cf9-7961-4f41-baa7-725fd2f57d54', 'id_1_7': 'b78b863c-8594-42fa-a396-53a0ab185c47', 'id_1_8': '90ec227d-479c-4fac-bd79-312bb637bf3f', 'id_1_9': '9438f82c-e335-446c-b8f0-5047b8fe3e31', 'id_1_10': '2cfe59e0-dfb4-4360-9032-235fe9a5c2e4'}
+[2024-10-23 09:57:22,271.271] base.py -> _exec_single_context line:1903 [INFO]: INSERT INTO dataset_query (dataset_id, query, source, source_app_id, created_by) VALUES (%(dataset_id)s::UUID, %(query)s, %(source)s, %(source_app_id)s::UUID, %(created_by)s::UUID) RETURNING dataset_query.id, dataset_query.updated_at, dataset_query.created_at
+[2024-10-23 09:57:22,271.271] base.py -> _exec_single_context line:1908 [INFO]: [cached since 15.8s ago] {'dataset_id': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89'), 'query': '想学习flask，有什么建议么？', 'source': <RetrievalSource.HIT_TESTING: 'hit_testing'>, 'source_app_id': None, 'created_by': '46db30d1-3199-4e79-a0cd-abf12fa6858f'}
+[2024-10-23 09:57:22,272.272] base.py -> _commit_impl line:1146 [INFO]: COMMIT
+[2024-10-23 09:57:22,274.274] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:22,274.274] base.py -> _exec_single_context line:1903 [INFO]: INSERT INTO dataset_query (dataset_id, query, source, source_app_id, created_by) VALUES (%(dataset_id)s::UUID, %(query)s, %(source)s, %(source_app_id)s::UUID, %(created_by)s::UUID) RETURNING dataset_query.id, dataset_query.updated_at, dataset_query.created_at
+[2024-10-23 09:57:22,274.274] base.py -> _exec_single_context line:1908 [INFO]: [cached since 15.81s ago] {'dataset_id': 'f3f28f75-8e60-4eba-b6df-4d1b390bbd89', 'query': '想学习flask，有什么建议么？', 'source': <RetrievalSource.HIT_TESTING: 'hit_testing'>, 'source_app_id': None, 'created_by': '46db30d1-3199-4e79-a0cd-abf12fa6858f'}
+[2024-10-23 09:57:22,275.275] base.py -> _commit_impl line:1146 [INFO]: COMMIT
+[2024-10-23 09:57:22,276.276] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:22,277.277] base.py -> _exec_single_context line:1903 [INFO]: UPDATE segment SET hit_count=(segment.hit_count + %(hit_count_1)s) WHERE segment.id IN (%(id_1_1)s::UUID, %(id_1_2)s::UUID)
+[2024-10-23 09:57:22,277.277] base.py -> _exec_single_context line:1908 [INFO]: [cached since 15.66s ago] {'hit_count_1': 1, 'id_1_1': UUID('ed8347a4-57a9-487e-bb99-becfb209990f'), 'id_1_2': 'c80fdb0e-0ec2-451e-ba48-1ddc9f12ef16'}
+[2024-10-23 09:57:22,278.278] base.py -> _commit_impl line:1146 [INFO]: COMMIT
+[2024-10-23 09:57:22,279.279] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:22,279.279] base.py -> _exec_single_context line:1903 [INFO]: SELECT segment.id AS segment_id, segment.account_id AS segment_account_id, segment.dataset_id AS segment_dataset_id, segment.document_id AS segment_document_id, segment.node_id AS segment_node_id, segment.position AS segment_position, segment.content AS segment_content, segment.character_count AS segment_character_count, segment.token_count AS segment_token_count, segment.keywords AS segment_keywords, segment.hash AS segment_hash, segment.hit_count AS segment_hit_count, segment.enabled AS segment_enabled, segment.disabled_at AS segment_disabled_at, segment.processing_started_at AS segment_processing_started_at, segment.indexing_completed_at AS segment_indexing_completed_at, segment.completed_at AS segment_completed_at, segment.stopped_at AS segment_stopped_at, segment.error AS segment_error, segment.status AS segment_status, segment.updated_at AS segment_updated_at, segment.created_at AS segment_created_at 
+FROM segment 
+WHERE segment.id IN (%(id_1_1)s::UUID, %(id_1_2)s::UUID)
+[2024-10-23 09:57:22,280.280] base.py -> _exec_single_context line:1908 [INFO]: [cached since 15.82s ago] {'id_1_1': 'ed8347a4-57a9-487e-bb99-becfb209990f', 'id_1_2': 'c80fdb0e-0ec2-451e-ba48-1ddc9f12ef16'}
+[2024-10-23 09:57:22,281.281] base.py -> _exec_single_context line:1903 [INFO]: SELECT document.id AS document_id, document.account_id AS document_account_id, document.dataset_id AS document_dataset_id, document.upload_file_id AS document_upload_file_id, document.process_rule_id AS document_process_rule_id, document.batch AS document_batch, document.name AS document_name, document.position AS document_position, document.character_count AS document_character_count, document.token_count AS document_token_count, document.processing_started_at AS document_processing_started_at, document.parsing_completed_at AS document_parsing_completed_at, document.splitting_completed_at AS document_splitting_completed_at, document.indexing_completed_at AS document_indexing_completed_at, document.completed_at AS document_completed_at, document.stopped_at AS document_stopped_at, document.error AS document_error, document.enabled AS document_enabled, document.disabled_at AS document_disabled_at, document.status AS document_status, document.updated_at AS document_updated_at, document.created_at AS document_created_at 
+FROM document 
+WHERE document.id = %(pk_1)s::UUID
+[2024-10-23 09:57:22,281.281] base.py -> _exec_single_context line:1908 [INFO]: [cached since 15.66s ago] {'pk_1': UUID('ce9feff2-387a-4f77-a97b-acf70e9bb844')}
+[2024-10-23 09:57:22,282.282] base.py -> _exec_single_context line:1903 [INFO]: SELECT upload_file.id AS upload_file_id, upload_file.account_id AS upload_file_account_id, upload_file.name AS upload_file_name, upload_file.key AS upload_file_key, upload_file.size AS upload_file_size, upload_file.extension AS upload_file_extension, upload_file.mime_type AS upload_file_mime_type, upload_file.hash AS upload_file_hash, upload_file.updated_at AS upload_file_updated_at, upload_file.created_at AS upload_file_created_at 
+FROM upload_file 
+WHERE upload_file.id = %(id_1)s::UUID
+[2024-10-23 09:57:22,282.282] base.py -> _exec_single_context line:1908 [INFO]: [cached since 15.66s ago] {'id_1': UUID('1f913c05-8783-4de4-a2c7-c551fa17d0f6')}
+[2024-10-23 09:57:22,283.283] base.py -> _exec_single_context line:1903 [INFO]: SELECT document.id AS document_id, document.account_id AS document_account_id, document.dataset_id AS document_dataset_id, document.upload_file_id AS document_upload_file_id, document.process_rule_id AS document_process_rule_id, document.batch AS document_batch, document.name AS document_name, document.position AS document_position, document.character_count AS document_character_count, document.token_count AS document_token_count, document.processing_started_at AS document_processing_started_at, document.parsing_completed_at AS document_parsing_completed_at, document.splitting_completed_at AS document_splitting_completed_at, document.indexing_completed_at AS document_indexing_completed_at, document.completed_at AS document_completed_at, document.stopped_at AS document_stopped_at, document.error AS document_error, document.enabled AS document_enabled, document.disabled_at AS document_disabled_at, document.status AS document_status, document.updated_at AS document_updated_at, document.created_at AS document_created_at 
+FROM document 
+WHERE document.id = %(pk_1)s::UUID
+[2024-10-23 09:57:22,283.283] base.py -> _exec_single_context line:1908 [INFO]: [cached since 15.67s ago] {'pk_1': UUID('c3761169-a61c-4702-946a-abe46531a0dc')}
+[2024-10-23 09:57:22,284.284] base.py -> _exec_single_context line:1903 [INFO]: SELECT upload_file.id AS upload_file_id, upload_file.account_id AS upload_file_account_id, upload_file.name AS upload_file_name, upload_file.key AS upload_file_key, upload_file.size AS upload_file_size, upload_file.extension AS upload_file_extension, upload_file.mime_type AS upload_file_mime_type, upload_file.hash AS upload_file_hash, upload_file.updated_at AS upload_file_updated_at, upload_file.created_at AS upload_file_created_at 
+FROM upload_file 
+WHERE upload_file.id = %(id_1)s::UUID
+[2024-10-23 09:57:22,285.285] base.py -> _exec_single_context line:1908 [INFO]: [cached since 15.67s ago] {'id_1': UUID('1f913c05-8783-4de4-a2c7-c551fa17d0f6')}
+[2024-10-23 09:57:22,286.286] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:57:22,286.286] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:57:22] "POST /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89/hit HTTP/1.1" 200 -
+[2024-10-23 09:57:27,535.535] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:27,536.536] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.id = %(pk_1)s::UUID
+[2024-10-23 09:57:27,536.536] base.py -> _exec_single_context line:1908 [INFO]: [cached since 52.82s ago] {'pk_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:57:27,538.538] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset_query.id AS dataset_query_id, dataset_query.dataset_id AS dataset_query_dataset_id, dataset_query.query AS dataset_query_query, dataset_query.source AS dataset_query_source, dataset_query.source_app_id AS dataset_query_source_app_id, dataset_query.created_by AS dataset_query_created_by, dataset_query.updated_at AS dataset_query_updated_at, dataset_query.created_at AS dataset_query_created_at 
+FROM dataset_query 
+WHERE dataset_query.dataset_id = %(dataset_id_1)s::UUID ORDER BY dataset_query.created_at DESC 
+ LIMIT %(param_1)s
+[2024-10-23 09:57:27,539.539] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00025s] {'dataset_id_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89'), 'param_1': 10}
+[2024-10-23 09:57:27,603.603] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:57:27,604.604] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:57:27] "GET /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89/queries HTTP/1.1" 200 -
+[2024-10-23 09:57:30,099.099] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:30,099.099] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.id = %(pk_1)s::UUID
+[2024-10-23 09:57:30,099.099] base.py -> _exec_single_context line:1908 [INFO]: [cached since 55.39s ago] {'pk_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:57:30,102.102] base.py -> _exec_single_context line:1903 [INFO]: SELECT document.id AS document_id, document.account_id AS document_account_id, document.dataset_id AS document_dataset_id, document.upload_file_id AS document_upload_file_id, document.process_rule_id AS document_process_rule_id, document.batch AS document_batch, document.name AS document_name, document.position AS document_position, document.character_count AS document_character_count, document.token_count AS document_token_count, document.processing_started_at AS document_processing_started_at, document.parsing_completed_at AS document_parsing_completed_at, document.splitting_completed_at AS document_splitting_completed_at, document.indexing_completed_at AS document_indexing_completed_at, document.completed_at AS document_completed_at, document.stopped_at AS document_stopped_at, document.error AS document_error, document.enabled AS document_enabled, document.disabled_at AS document_disabled_at, document.status AS document_status, document.updated_at AS document_updated_at, document.created_at AS document_created_at 
+FROM document 
+WHERE document.dataset_id = %(dataset_id_1)s::UUID AND document.batch = %(batch_1)s ORDER BY document.position ASC
+[2024-10-23 09:57:30,102.102] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00027s] {'dataset_id_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89'), 'batch_1': '20241007114350655388'}
+[2024-10-23 09:57:30,103.103] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: 
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\document_handler.py", line 104, in get_documents_status
+    documents_status = self.document_service.get_documents_status(dataset_id, batch)
+  File "D:\Code\llmops\llmops-api\internal\service\document_service.py", line 123, in get_documents_status
+    raise NotFoundException("该处理批次未发现文档，请核实后重试")
+internal.exception.exception.NotFoundException
+[2024-10-23 09:57:30,106.106] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:57:30,107.107] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:57:30] "GET /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89/documents/batch/20241007114350655388 HTTP/1.1" 200 -
+[2024-10-23 09:57:33,361.361] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:33,362.362] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.id = %(pk_1)s::UUID
+[2024-10-23 09:57:33,362.362] base.py -> _exec_single_context line:1908 [INFO]: [cached since 58.65s ago] {'pk_1': UUID('6347c9df-7a30-4ea4-9965-a0f368f007fc')}
+[2024-10-23 09:57:33,362.362] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: 
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\document_handler.py", line 95, in get_documents_with_page
+    documents, paginator = self.document_service.get_documents_with_page(dataset_id, req)
+  File "D:\Code\llmops\llmops-api\internal\service\document_service.py", line 259, in get_documents_with_page
+    raise NotFoundException("该知识库不存在，或无权限")
+internal.exception.exception.NotFoundException
+[2024-10-23 09:57:33,363.363] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:57:33,363.363] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:57:33] "GET /datasets/6347c9df-7a30-4ea4-9965-a0f368f007fc/documents?current_page=1&page_size=20 HTTP/1.1" 200 -
+[2024-10-23 09:57:39,641.641] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:39,641.641] base.py -> _exec_single_context line:1903 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.id = %(pk_1)s::UUID
+[2024-10-23 09:57:39,641.641] base.py -> _exec_single_context line:1908 [INFO]: [cached since 64.93s ago] {'pk_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:57:39,643.643] base.py -> _exec_single_context line:1903 [INFO]: SELECT document.id AS document_id, document.account_id AS document_account_id, document.dataset_id AS document_dataset_id, document.upload_file_id AS document_upload_file_id, document.process_rule_id AS document_process_rule_id, document.batch AS document_batch, document.name AS document_name, document.position AS document_position, document.character_count AS document_character_count, document.token_count AS document_token_count, document.processing_started_at AS document_processing_started_at, document.parsing_completed_at AS document_parsing_completed_at, document.splitting_completed_at AS document_splitting_completed_at, document.indexing_completed_at AS document_indexing_completed_at, document.completed_at AS document_completed_at, document.stopped_at AS document_stopped_at, document.error AS document_error, document.enabled AS document_enabled, document.disabled_at AS document_disabled_at, document.status AS document_status, document.updated_at AS document_updated_at, document.created_at AS document_created_at 
+FROM document 
+WHERE document.account_id = %(account_id_1)s::UUID AND document.dataset_id = %(dataset_id_1)s::UUID ORDER BY document.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s
+[2024-10-23 09:57:39,644.644] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00023s] {'account_id_1': '46db30d1-3199-4e79-a0cd-abf12fa6858f', 'dataset_id_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89'), 'param_1': 20, 'param_2': 0}
+[2024-10-23 09:57:39,647.647] base.py -> _exec_single_context line:1903 [INFO]: SELECT count(*) AS count_1 
+FROM (SELECT document.id AS id, document.account_id AS account_id, document.dataset_id AS dataset_id, document.upload_file_id AS upload_file_id, document.process_rule_id AS process_rule_id, document.batch AS batch, document.name AS name, document.position AS position, document.character_count AS character_count, document.token_count AS token_count, document.processing_started_at AS processing_started_at, document.parsing_completed_at AS parsing_completed_at, document.splitting_completed_at AS splitting_completed_at, document.indexing_completed_at AS indexing_completed_at, document.completed_at AS completed_at, document.stopped_at AS stopped_at, document.error AS error, document.enabled AS enabled, document.disabled_at AS disabled_at, document.status AS status, document.updated_at AS updated_at, document.created_at AS created_at 
+FROM document 
+WHERE document.account_id = %(account_id_1)s::UUID AND document.dataset_id = %(dataset_id_1)s::UUID) AS anon_1
+[2024-10-23 09:57:39,647.647] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00021s] {'account_id_1': '46db30d1-3199-4e79-a0cd-abf12fa6858f', 'dataset_id_1': UUID('f3f28f75-8e60-4eba-b6df-4d1b390bbd89')}
+[2024-10-23 09:57:39,649.649] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,649.649] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00020s] {'coalesce_2': 0, 'document_id_1': UUID('ad4afdf4-141a-4d29-ab00-20a0d2728566')}
+[2024-10-23 09:57:39,650.650] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,650.650] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.001417s ago] {'coalesce_2': 0, 'document_id_1': UUID('b5c4851e-8e4c-4eb6-99d9-50f2ab207b5f')}
+[2024-10-23 09:57:39,651.651] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,652.652] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.002623s ago] {'coalesce_2': 0, 'document_id_1': UUID('b51c9ef6-be4b-4593-877e-e12e5bbea2ac')}
+[2024-10-23 09:57:39,653.653] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,653.653] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.003704s ago] {'coalesce_2': 0, 'document_id_1': UUID('5e005a63-74bb-4ab0-926a-0e8005dea503')}
+[2024-10-23 09:57:39,654.654] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,654.654] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.00495s ago] {'coalesce_2': 0, 'document_id_1': UUID('fa35ed97-1b3e-4388-af22-834a901d333b')}
+[2024-10-23 09:57:39,655.655] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,655.655] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.006094s ago] {'coalesce_2': 0, 'document_id_1': UUID('798bfdb4-f52c-44d1-b6fa-63189495e665')}
+[2024-10-23 09:57:39,656.656] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,656.656] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.007203s ago] {'coalesce_2': 0, 'document_id_1': UUID('3d2d28e7-8784-4fe4-90ab-229c37038473')}
+[2024-10-23 09:57:39,657.657] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,657.657] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.008254s ago] {'coalesce_2': 0, 'document_id_1': UUID('6467db66-133e-43ec-94c1-ee63366e239b')}
+[2024-10-23 09:57:39,658.658] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,658.658] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.009233s ago] {'coalesce_2': 0, 'document_id_1': UUID('289e0b6e-4254-4a65-a3b3-6461c1f60cab')}
+[2024-10-23 09:57:39,660.660] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,660.660] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.01057s ago] {'coalesce_2': 0, 'document_id_1': UUID('066bef7f-5761-45ca-bff9-7f9c8fb85d57')}
+[2024-10-23 09:57:39,660.660] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,660.660] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.01218s ago] {'coalesce_2': 0, 'document_id_1': UUID('dffec445-6e65-4c87-9134-b2684f645efa')}
+[2024-10-23 09:57:39,661.661] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,662.662] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.01333s ago] {'coalesce_2': 0, 'document_id_1': UUID('ffa45e3b-9a29-4484-929f-6eb23679ad75')}
+[2024-10-23 09:57:39,663.663] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,663.663] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.01466s ago] {'coalesce_2': 0, 'document_id_1': UUID('36c5f5e4-1595-4cde-ad65-8f7b59b19ff0')}
+[2024-10-23 09:57:39,664.664] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,664.664] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.01585s ago] {'coalesce_2': 0, 'document_id_1': UUID('57a1bcf7-6315-44d0-93fc-93936e0646c3')}
+[2024-10-23 09:57:39,665.665] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,665.665] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.01693s ago] {'coalesce_2': 0, 'document_id_1': UUID('742816c9-9d24-4ab7-af85-76a5769ade29')}
+[2024-10-23 09:57:39,666.666] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,666.666] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.018s ago] {'coalesce_2': 0, 'document_id_1': UUID('718b7afa-50be-4e77-aaac-145c412fcc68')}
+[2024-10-23 09:57:39,667.667] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,668.668] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.01907s ago] {'coalesce_2': 0, 'document_id_1': UUID('c3761169-a61c-4702-946a-abe46531a0dc')}
+[2024-10-23 09:57:39,668.668] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,669.669] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.02005s ago] {'coalesce_2': 0, 'document_id_1': UUID('688d1214-f276-4eaf-9fb5-1f067594db51')}
+[2024-10-23 09:57:39,670.670] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,670.670] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.02136s ago] {'coalesce_2': 0, 'document_id_1': UUID('8ee1bcc5-d8b8-426e-96b1-361a1113a426')}
+[2024-10-23 09:57:39,671.671] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:39,671.671] base.py -> _exec_single_context line:1908 [INFO]: [cached since 0.02278s ago] {'coalesce_2': 0, 'document_id_1': UUID('279a8256-5299-4b36-9ddb-eb7eb164e9f9')}
+[2024-10-23 09:57:39,674.674] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:57:39,674.674] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:57:39] "GET /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89/documents?current_page=1&page_size=20 HTTP/1.1" 200 -
+[2024-10-23 09:57:42,181.181] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:42,182.182] base.py -> _exec_single_context line:1903 [INFO]: SELECT document.id AS document_id, document.account_id AS document_account_id, document.dataset_id AS document_dataset_id, document.upload_file_id AS document_upload_file_id, document.process_rule_id AS document_process_rule_id, document.batch AS document_batch, document.name AS document_name, document.position AS document_position, document.character_count AS document_character_count, document.token_count AS document_token_count, document.processing_started_at AS document_processing_started_at, document.parsing_completed_at AS document_parsing_completed_at, document.splitting_completed_at AS document_splitting_completed_at, document.indexing_completed_at AS document_indexing_completed_at, document.completed_at AS document_completed_at, document.stopped_at AS document_stopped_at, document.error AS document_error, document.enabled AS document_enabled, document.disabled_at AS document_disabled_at, document.status AS document_status, document.updated_at AS document_updated_at, document.created_at AS document_created_at 
+FROM document 
+WHERE document.id = %(pk_1)s::UUID
+[2024-10-23 09:57:42,182.182] base.py -> _exec_single_context line:1908 [INFO]: [cached since 35.57s ago] {'pk_1': UUID('d4b902e3-a013-4780-93fa-6fc300ab6bf8')}
+[2024-10-23 09:57:42,184.184] base.py -> _exec_single_context line:1903 [INFO]: SELECT count(segment.id) AS count_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:42,184.184] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00022s] {'document_id_1': UUID('d4b902e3-a013-4780-93fa-6fc300ab6bf8')}
+[2024-10-23 09:57:42,186.186] base.py -> _exec_single_context line:1903 [INFO]: SELECT coalesce(sum(segment.hit_count), %(coalesce_2)s) AS coalesce_1 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID
+[2024-10-23 09:57:42,186.186] base.py -> _exec_single_context line:1908 [INFO]: [cached since 2.537s ago] {'coalesce_2': 0, 'document_id_1': UUID('d4b902e3-a013-4780-93fa-6fc300ab6bf8')}
+[2024-10-23 09:57:42,187.187] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:57:42,187.187] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:57:42] "GET /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89/documents/d4b902e3-a013-4780-93fa-6fc300ab6bf8 HTTP/1.1" 200 -
+[2024-10-23 09:57:45,003.003] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:45,003.003] base.py -> _exec_single_context line:1903 [INFO]: SELECT document.id AS document_id, document.account_id AS document_account_id, document.dataset_id AS document_dataset_id, document.upload_file_id AS document_upload_file_id, document.process_rule_id AS document_process_rule_id, document.batch AS document_batch, document.name AS document_name, document.position AS document_position, document.character_count AS document_character_count, document.token_count AS document_token_count, document.processing_started_at AS document_processing_started_at, document.parsing_completed_at AS document_parsing_completed_at, document.splitting_completed_at AS document_splitting_completed_at, document.indexing_completed_at AS document_indexing_completed_at, document.completed_at AS document_completed_at, document.stopped_at AS document_stopped_at, document.error AS document_error, document.enabled AS document_enabled, document.disabled_at AS document_disabled_at, document.status AS document_status, document.updated_at AS document_updated_at, document.created_at AS document_created_at 
+FROM document 
+WHERE document.id = %(pk_1)s::UUID
+[2024-10-23 09:57:45,003.003] base.py -> _exec_single_context line:1908 [INFO]: [cached since 38.39s ago] {'pk_1': UUID('d4b902e3-a013-4780-93fa-6fc300ab6bf8')}
+[2024-10-23 09:57:45,005.005] base.py -> _exec_single_context line:1903 [INFO]: UPDATE document SET name=%(name)s WHERE document.id = %(document_id)s::UUID
+[2024-10-23 09:57:45,006.006] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00027s] {'name': '项目提示词大全.md', 'document_id': UUID('d4b902e3-a013-4780-93fa-6fc300ab6bf8')}
+[2024-10-23 09:57:45,006.006] base.py -> _commit_impl line:1146 [INFO]: COMMIT
+[2024-10-23 09:57:45,010.010] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:57:45] "POST /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89/documents/d4b902e3-a013-4780-93fa-6fc300ab6bf8/name HTTP/1.1" 200 -
+[2024-10-23 09:57:47,042.042] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:47,042.042] base.py -> _exec_single_context line:1903 [INFO]: SELECT document.id AS document_id, document.account_id AS document_account_id, document.dataset_id AS document_dataset_id, document.upload_file_id AS document_upload_file_id, document.process_rule_id AS document_process_rule_id, document.batch AS document_batch, document.name AS document_name, document.position AS document_position, document.character_count AS document_character_count, document.token_count AS document_token_count, document.processing_started_at AS document_processing_started_at, document.parsing_completed_at AS document_parsing_completed_at, document.splitting_completed_at AS document_splitting_completed_at, document.indexing_completed_at AS document_indexing_completed_at, document.completed_at AS document_completed_at, document.stopped_at AS document_stopped_at, document.error AS document_error, document.enabled AS document_enabled, document.disabled_at AS document_disabled_at, document.status AS document_status, document.updated_at AS document_updated_at, document.created_at AS document_created_at 
+FROM document 
+WHERE document.id = %(pk_1)s::UUID
+[2024-10-23 09:57:47,042.042] base.py -> _exec_single_context line:1908 [INFO]: [cached since 40.43s ago] {'pk_1': UUID('c4c940e9-42af-4150-9141-814b1d37efce')}
+[2024-10-23 09:57:47,043.043] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: 
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\document_handler.py", line 77, in update_document_enabled
+    self.document_service.update_document_enabled(dataset_id, document_id, req.enabled.data)
+  File "D:\Code\llmops\llmops-api\internal\service\document_service.py", line 194, in update_document_enabled
+    raise NotFoundException("该文档不存在，请核实后重试")
+internal.exception.exception.NotFoundException
+[2024-10-23 09:57:47,044.044] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:57:47,045.045] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:57:47] "POST /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89/documents/c4c940e9-42af-4150-9141-814b1d37efce/enabled HTTP/1.1" 200 -
+[2024-10-23 09:57:50,723.723] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:50,724.724] base.py -> _exec_single_context line:1903 [INFO]: SELECT document.id AS document_id, document.account_id AS document_account_id, document.dataset_id AS document_dataset_id, document.upload_file_id AS document_upload_file_id, document.process_rule_id AS document_process_rule_id, document.batch AS document_batch, document.name AS document_name, document.position AS document_position, document.character_count AS document_character_count, document.token_count AS document_token_count, document.processing_started_at AS document_processing_started_at, document.parsing_completed_at AS document_parsing_completed_at, document.splitting_completed_at AS document_splitting_completed_at, document.indexing_completed_at AS document_indexing_completed_at, document.completed_at AS document_completed_at, document.stopped_at AS document_stopped_at, document.error AS document_error, document.enabled AS document_enabled, document.disabled_at AS document_disabled_at, document.status AS document_status, document.updated_at AS document_updated_at, document.created_at AS document_created_at 
+FROM document 
+WHERE document.id = %(pk_1)s::UUID
+[2024-10-23 09:57:50,724.724] base.py -> _exec_single_context line:1908 [INFO]: [cached since 44.11s ago] {'pk_1': UUID('d4b902e3-a013-4780-93fa-6fc300ab6bf8')}
+[2024-10-23 09:57:50,727.727] base.py -> _exec_single_context line:1903 [INFO]: SELECT segment.id AS segment_id, segment.account_id AS segment_account_id, segment.dataset_id AS segment_dataset_id, segment.document_id AS segment_document_id, segment.node_id AS segment_node_id, segment.position AS segment_position, segment.content AS segment_content, segment.character_count AS segment_character_count, segment.token_count AS segment_token_count, segment.keywords AS segment_keywords, segment.hash AS segment_hash, segment.hit_count AS segment_hit_count, segment.enabled AS segment_enabled, segment.disabled_at AS segment_disabled_at, segment.processing_started_at AS segment_processing_started_at, segment.indexing_completed_at AS segment_indexing_completed_at, segment.completed_at AS segment_completed_at, segment.stopped_at AS segment_stopped_at, segment.error AS segment_error, segment.status AS segment_status, segment.updated_at AS segment_updated_at, segment.created_at AS segment_created_at 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID ORDER BY segment.position ASC 
+ LIMIT %(param_1)s OFFSET %(param_2)s
+[2024-10-23 09:57:50,727.727] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00023s] {'document_id_1': UUID('d4b902e3-a013-4780-93fa-6fc300ab6bf8'), 'param_1': 20, 'param_2': 60}
+[2024-10-23 09:57:50,729.729] base.py -> _exec_single_context line:1903 [INFO]: SELECT count(*) AS count_1 
+FROM (SELECT segment.id AS id, segment.account_id AS account_id, segment.dataset_id AS dataset_id, segment.document_id AS document_id, segment.node_id AS node_id, segment.position AS position, segment.content AS content, segment.character_count AS character_count, segment.token_count AS token_count, segment.keywords AS keywords, segment.hash AS hash, segment.hit_count AS hit_count, segment.enabled AS enabled, segment.disabled_at AS disabled_at, segment.processing_started_at AS processing_started_at, segment.indexing_completed_at AS indexing_completed_at, segment.completed_at AS completed_at, segment.stopped_at AS stopped_at, segment.error AS error, segment.status AS status, segment.updated_at AS updated_at, segment.created_at AS created_at 
+FROM segment 
+WHERE segment.document_id = %(document_id_1)s::UUID) AS anon_1
+[2024-10-23 09:57:50,730.730] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00039s] {'document_id_1': UUID('d4b902e3-a013-4780-93fa-6fc300ab6bf8')}
+[2024-10-23 09:57:50,731.731] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:57:50,732.732] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:57:50] "GET /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89/documents/d4b902e3-a013-4780-93fa-6fc300ab6bf8/segments?current_page=4&page_size=20 HTTP/1.1" 200 -
+[2024-10-23 09:57:55,099.099] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:55,100.100] base.py -> _exec_single_context line:1903 [INFO]: SELECT segment.id AS segment_id, segment.account_id AS segment_account_id, segment.dataset_id AS segment_dataset_id, segment.document_id AS segment_document_id, segment.node_id AS segment_node_id, segment.position AS segment_position, segment.content AS segment_content, segment.character_count AS segment_character_count, segment.token_count AS segment_token_count, segment.keywords AS segment_keywords, segment.hash AS segment_hash, segment.hit_count AS segment_hit_count, segment.enabled AS segment_enabled, segment.disabled_at AS segment_disabled_at, segment.processing_started_at AS segment_processing_started_at, segment.indexing_completed_at AS segment_indexing_completed_at, segment.completed_at AS segment_completed_at, segment.stopped_at AS segment_stopped_at, segment.error AS segment_error, segment.status AS segment_status, segment.updated_at AS segment_updated_at, segment.created_at AS segment_created_at 
+FROM segment 
+WHERE segment.id = %(pk_1)s::UUID
+[2024-10-23 09:57:55,100.100] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00028s] {'pk_1': UUID('ce0256e1-f6fb-440d-b990-46c5aea86836')}
+[2024-10-23 09:57:55,101.101] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: 
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\segment_handler.py", line 74, in update_segment_enabled
+    self.segment_service.update_segment_enabled(dataset_id, document_id, segment_id, req.enabled.data)
+  File "D:\Code\llmops\llmops-api\internal\service\segment_service.py", line 283, in update_segment_enabled
+    raise NotFoundException("该文档片段不存在，或无权限修改，请核实后重试")
+internal.exception.exception.NotFoundException
+[2024-10-23 09:57:55,104.104] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:57:55,105.105] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:57:55] "POST /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89/documents/d4b902e3-a013-4780-93fa-6fc300ab6bf8/segments/ce0256e1-f6fb-440d-b990-46c5aea86836/enabled HTTP/1.1" 200 -
+[2024-10-23 09:57:57,490.490] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:57:57,490.490] base.py -> _exec_single_context line:1903 [INFO]: SELECT segment.id AS segment_id, segment.account_id AS segment_account_id, segment.dataset_id AS segment_dataset_id, segment.document_id AS segment_document_id, segment.node_id AS segment_node_id, segment.position AS segment_position, segment.content AS segment_content, segment.character_count AS segment_character_count, segment.token_count AS segment_token_count, segment.keywords AS segment_keywords, segment.hash AS segment_hash, segment.hit_count AS segment_hit_count, segment.enabled AS segment_enabled, segment.disabled_at AS segment_disabled_at, segment.processing_started_at AS segment_processing_started_at, segment.indexing_completed_at AS segment_indexing_completed_at, segment.completed_at AS segment_completed_at, segment.stopped_at AS segment_stopped_at, segment.error AS segment_error, segment.status AS segment_status, segment.updated_at AS segment_updated_at, segment.created_at AS segment_created_at 
+FROM segment 
+WHERE segment.id = %(pk_1)s::UUID
+[2024-10-23 09:57:57,490.490] base.py -> _exec_single_context line:1908 [INFO]: [cached since 2.39s ago] {'pk_1': UUID('ce0256e1-f6fb-440d-b990-46c5aea86836')}
+[2024-10-23 09:57:57,492.492] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: 'NotFoundException' object has no attribute 'id'
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\segment_handler.py", line 64, in get_segment
+    return success_json(resp.dump(segment))
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\marshmallow\schema.py", line 544, in dump
+    processed_obj = self._invoke_dump_processors(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\marshmallow\schema.py", line 1069, in _invoke_dump_processors
+    data = self._invoke_processors(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\marshmallow\schema.py", line 1226, in _invoke_processors
+    data = processor(data, many=many, **kwargs)
+  File "D:\Code\llmops\llmops-api\internal\schema\segment_schema.py", line 87, in process_data
+    "id": data.id,
+AttributeError: 'NotFoundException' object has no attribute 'id'
+[2024-10-23 09:57:57,495.495] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:57:57,519.519] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:57:57] "[35m[1mGET /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89/documents/d4b902e3-a013-4780-93fa-6fc300ab6bf8/segments/ce0256e1-f6fb-440d-b990-46c5aea86836 HTTP/1.1[0m" 500 -
+[2024-10-23 09:58:41,396.396] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\service\\segment_service.py', reloading
+[2024-10-23 09:58:41,730.730] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 09:58:46,356.356] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 09:58:46,359.359] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 09:58:46,541.541] base.py -> _exec_single_context line:1903 [INFO]: select pg_catalog.version()
+[2024-10-23 09:58:46,542.542] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-10-23 09:58:46,542.542] base.py -> _exec_single_context line:1903 [INFO]: select current_schema()
+[2024-10-23 09:58:46,543.543] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-10-23 09:58:46,543.543] base.py -> _exec_single_context line:1903 [INFO]: show standard_conforming_strings
+[2024-10-23 09:58:46,543.543] base.py -> _exec_single_context line:1908 [INFO]: [raw sql] {}
+[2024-10-23 09:58:46,544.544] base.py -> _begin_impl line:1103 [INFO]: BEGIN (implicit)
+[2024-10-23 09:58:46,546.546] base.py -> _exec_single_context line:1903 [INFO]: SELECT segment.id AS segment_id, segment.account_id AS segment_account_id, segment.dataset_id AS segment_dataset_id, segment.document_id AS segment_document_id, segment.node_id AS segment_node_id, segment.position AS segment_position, segment.content AS segment_content, segment.character_count AS segment_character_count, segment.token_count AS segment_token_count, segment.keywords AS segment_keywords, segment.hash AS segment_hash, segment.hit_count AS segment_hit_count, segment.enabled AS segment_enabled, segment.disabled_at AS segment_disabled_at, segment.processing_started_at AS segment_processing_started_at, segment.indexing_completed_at AS segment_indexing_completed_at, segment.completed_at AS segment_completed_at, segment.stopped_at AS segment_stopped_at, segment.error AS segment_error, segment.status AS segment_status, segment.updated_at AS segment_updated_at, segment.created_at AS segment_created_at 
+FROM segment 
+WHERE segment.id = %(pk_1)s::UUID
+[2024-10-23 09:58:46,546.546] base.py -> _exec_single_context line:1908 [INFO]: [generated in 0.00037s] {'pk_1': UUID('ce0256e1-f6fb-440d-b990-46c5aea86836')}
+[2024-10-23 09:58:46,548.548] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: 
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\segment_handler.py", line 62, in get_segment
+    segment = self.segment_service.get_segment(dataset_id, document_id, segment_id)
+  File "D:\Code\llmops\llmops-api\internal\service\segment_service.py", line 264, in get_segment
+    raise NotFoundException("该文档片段不存在，或无权限查看，请核实后重试")
+internal.exception.exception.NotFoundException
+[2024-10-23 09:58:46,549.549] base.py -> _rollback_impl line:1129 [INFO]: ROLLBACK
+[2024-10-23 09:58:46,550.550] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 09:58:46] "GET /datasets/f3f28f75-8e60-4eba-b6df-4d1b390bbd89/documents/d4b902e3-a013-4780-93fa-6fc300ab6bf8/segments/ce0256e1-f6fb-440d-b990-46c5aea86836 HTTP/1.1" 200 -
+[2024-10-23 23:06:04,893.893] _internal.py -> _log line:96 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-10-23 23:06:04,893.893] _internal.py -> _log line:96 [INFO]: [33mPress CTRL+C to quit[0m
+[2024-10-23 23:06:04,894.894] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:06:09,764.764] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:06:09,766.766] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:06:42,019.019] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.validate() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 263, in ping
+    agent = FunctionCallAgent(AgentConfig(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+TypeError: BaseModel.validate() takes 2 positional arguments but 3 were given
+[2024-10-23 23:06:42,030.030] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:06:42] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:07:11,662.662] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:07:11,978.978] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:07:16,776.776] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:07:16,778.778] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:07:31,022.022] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:07:31,390.390] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:07:36,072.072] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:07:36,075.075] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:07:55,050.050] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:07:55,375.375] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:08:00,172.172] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:08:00,174.174] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:08:33,243.243] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:08:33,551.551] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:08:38,155.155] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:08:38,158.158] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:08:57,278.278] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.validate() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 263, in ping
+    agent = FunctionCallAgent(AgentConfig(llm=ChatOpenAI(model="gpt-4o-mini")))
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+TypeError: BaseModel.validate() takes 2 positional arguments but 3 were given
+[2024-10-23 23:08:57,289.289] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:08:57] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:08:59,346.346] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.validate() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 263, in ping
+    agent = FunctionCallAgent(AgentConfig(llm=ChatOpenAI(model="gpt-4o-mini")))
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+TypeError: BaseModel.validate() takes 2 positional arguments but 3 were given
+[2024-10-23 23:08:59,356.356] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:08:59] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:09:10,807.807] _internal.py -> _log line:96 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-10-23 23:09:10,807.807] _internal.py -> _log line:96 [INFO]: [33mPress CTRL+C to quit[0m
+[2024-10-23 23:09:10,808.808] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:09:15,464.464] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:09:15,467.467] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:09:20,790.790] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.validate() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 263, in ping
+    agent = FunctionCallAgent(AgentConfig(llm=ChatOpenAI(model="gpt-4o-mini")))
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+TypeError: BaseModel.validate() takes 2 positional arguments but 3 were given
+[2024-10-23 23:09:20,800.800] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:09:20] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:11:39,592.592] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:11:39,907.907] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:11:44,856.856] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:11:44,859.859] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:11:46,654.654] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.validate() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 262, in ping
+    ac = AgentConfig(llm=ChatOpenAI(model="gpt-4o-mini"))
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+TypeError: BaseModel.validate() takes 2 positional arguments but 3 were given
+[2024-10-23 23:11:46,664.664] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:11:46] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:14:40,173.173] _internal.py -> _log line:96 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-10-23 23:14:40,173.173] _internal.py -> _log line:96 [INFO]: [33mPress CTRL+C to quit[0m
+[2024-10-23 23:14:40,176.176] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:14:44,829.829] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:14:44,832.832] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:14:45,052.052] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.validate() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 262, in ping
+    ac = AgentConfig(llm=ChatOpenAI(model="gpt-4o-mini"))
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+TypeError: BaseModel.validate() takes 2 positional arguments but 3 were given
+[2024-10-23 23:14:45,066.066] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:14:45] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:15:23,761.761] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:15:24,088.088] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:15:28,365.365] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:15:28,366.366] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:16:00,260.260] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.validate() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 263, in ping
+    ac = AgentConfig(llm=llm)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+TypeError: BaseModel.validate() takes 2 positional arguments but 3 were given
+[2024-10-23 23:16:00,275.275] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:16:00] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:17:17,697.697] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:17:17,994.994] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:17:22,708.708] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:17:22,713.713] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:17:22,932.932] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.validate() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 263, in ping
+    ac = AgentConfig(llm=llm)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+TypeError: BaseModel.validate() takes 2 positional arguments but 3 were given
+[2024-10-23 23:17:22,946.946] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:17:22] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:17:25,005.005] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.validate() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 263, in ping
+    ac = AgentConfig(llm=llm)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+TypeError: BaseModel.validate() takes 2 positional arguments but 3 were given
+[2024-10-23 23:17:25,015.015] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:17:25] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:17:31,015.015] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.validate() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 263, in ping
+    ac = AgentConfig(llm=llm)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+TypeError: BaseModel.validate() takes 2 positional arguments but 3 were given
+[2024-10-23 23:17:31,023.023] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:17:31] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:17:42,820.820] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:17:43,117.117] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:17:47,771.771] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:17:47,774.774] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:18:04,293.293] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:18:04,634.634] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:18:09,480.480] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:18:09,484.484] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:18:09,702.702] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.validate() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 263, in ping
+    ac = AgentConfig(llm=llm)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+TypeError: BaseModel.validate() takes 2 positional arguments but 3 were given
+[2024-10-23 23:18:09,715.715] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:18:09] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:18:14,455.455] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:18:14,747.747] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:18:19,703.703] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:18:19,706.706] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:18:41,599.599] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.validate() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 263, in ping
+    ac = AgentConfig(llm=llm)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+TypeError: BaseModel.validate() takes 2 positional arguments but 3 were given
+[2024-10-23 23:18:41,609.609] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:18:41] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:20:28,108.108] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:20:28,409.409] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:20:33,081.081] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:20:33,085.085] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:20:33,300.300] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.validate() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 263, in ping
+    ac = AgentConfig(llm=llm, tools=[])
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+TypeError: BaseModel.validate() takes 2 positional arguments but 3 were given
+[2024-10-23 23:20:33,313.313] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:20:33] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:21:17,604.604] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\demo测试.py', reloading
+[2024-10-23 23:21:17,925.925] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:21:22,421.421] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:21:22,423.423] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:21:41,298.298] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\demo测试.py', reloading
+[2024-10-23 23:21:41,617.617] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:21:46,371.371] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:21:46,374.374] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:22:20,364.364] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\demo测试.py', reloading
+[2024-10-23 23:22:20,652.652] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:22:25,169.169] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:22:25,172.172] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:23:40,189.189] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\demo测试.py', reloading
+[2024-10-23 23:23:40,513.513] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:23:45,300.300] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:23:45,302.302] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:24:38,516.516] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\demo测试.py', reloading
+[2024-10-23 23:24:38,866.866] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:24:43,410.410] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:24:43,413.413] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:25:00,017.017] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:25:00,311.311] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:25:05,349.349] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:25:05,351.351] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:25:31,356.356] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:25:31,658.658] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:25:36,126.126] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:25:36,129.129] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:26:27,686.686] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:26:28,019.019] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:26:32,676.676] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:26:32,679.679] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:27:12,598.598] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:27:12,928.928] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:27:17,679.679] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:27:17,681.681] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:28:09,294.294] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:28:09,671.671] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:28:14,433.433] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:28:14,435.435] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:28:52,689.689] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: Unsupported message type: <class 'tuple'>
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是", [], "")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 34, in run
+    return agent.invoke({
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1424, in invoke
+    for chunk in self.stream(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1102, in stream
+    _panic_or_proceed(all_futures, loop.step)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1540, in _panic_or_proceed
+    raise exc
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\executor.py", line 60, in done
+    task.result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "D:\Env\python\python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\retry.py", line 26, in run_with_retry
+    task.proc.invoke(task.input, task.config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\runnables\base.py", line 2879, in invoke
+    input = context.run(step.invoke, input, config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\utils.py", line 102, in invoke
+    ret = context.run(self.func, input, **kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\graph.py", line 80, in _route
+    value = reader(config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\read.py", line 95, in do_read
+    return mapper(read(channel, fresh))
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\algo.py", line 114, in local_read
+    apply_writes(new_checkpoint, all_channels, [task], None)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\algo.py", line 203, in apply_writes
+    updated = channels[chan].update(vals)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\channels\binop.py", line 104, in update
+    self.value = self.operator(self.value, value)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\message.py", line 70, in add_messages
+    right = [message_chunk_to_message(m) for m in convert_to_messages(right)]
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\messages\utils.py", line 322, in convert_to_messages
+    return [_convert_to_message(m) for m in messages]
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\messages\utils.py", line 322, in <listcomp>
+    return [_convert_to_message(m) for m in messages]
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\messages\utils.py", line 301, in _convert_to_message
+    raise NotImplementedError(f"Unsupported message type: {type(message)}")
+NotImplementedError: Unsupported message type: <class 'tuple'>
+[2024-10-23 23:28:52,718.718] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:28:52] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:29:54,143.143] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: Unsupported message type: <class 'tuple'>
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是", [], "")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 34, in run
+    return agent.invoke({
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1424, in invoke
+    for chunk in self.stream(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1102, in stream
+    _panic_or_proceed(all_futures, loop.step)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1540, in _panic_or_proceed
+    raise exc
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\executor.py", line 60, in done
+    task.result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "D:\Env\python\python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\retry.py", line 26, in run_with_retry
+    task.proc.invoke(task.input, task.config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\runnables\base.py", line 2879, in invoke
+    input = context.run(step.invoke, input, config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\utils.py", line 102, in invoke
+    ret = context.run(self.func, input, **kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\graph.py", line 80, in _route
+    value = reader(config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\read.py", line 95, in do_read
+    return mapper(read(channel, fresh))
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\algo.py", line 114, in local_read
+    apply_writes(new_checkpoint, all_channels, [task], None)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\algo.py", line 203, in apply_writes
+    updated = channels[chan].update(vals)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\channels\binop.py", line 104, in update
+    self.value = self.operator(self.value, value)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\message.py", line 70, in add_messages
+    right = [message_chunk_to_message(m) for m in convert_to_messages(right)]
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\messages\utils.py", line 322, in convert_to_messages
+    return [_convert_to_message(m) for m in messages]
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\messages\utils.py", line 322, in <listcomp>
+    return [_convert_to_message(m) for m in messages]
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\messages\utils.py", line 301, in _convert_to_message
+    raise NotImplementedError(f"Unsupported message type: {type(message)}")
+NotImplementedError: Unsupported message type: <class 'tuple'>
+[2024-10-23 23:29:54,166.166] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:29:54] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-23 23:32:32,392.392] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:32:32,747.747] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:32:37,549.549] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:32:37,553.553] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:33:58,329.329] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:33:58,663.663] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:34:03,203.203] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:34:03,206.206] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:37:04,009.009] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-23 23:37:04,319.319] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:37:08,956.956] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:37:08,960.960] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:37:37,183.183] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-23 23:37:37,516.516] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:37:42,054.054] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:37:42,057.057] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:39:15,386.386] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:39:15,751.751] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:39:20,542.542] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:39:20,544.544] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:39:55,899.899] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:39:56,227.227] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:40:06,265.265] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:40:11,167.167] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:40:11,170.170] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:40:16,113.113] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\__init__.py', reloading
+[2024-10-23 23:40:16,439.439] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:40:20,891.891] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:40:20,893.893] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:40:42,156.156] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\__init__.py', reloading
+[2024-10-23 23:40:42,484.484] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:40:47,079.079] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:40:47,082.082] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:42:11,203.203] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:42:11,641.641] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:42:16,272.272] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:42:16,275.275] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:42:23,297.297] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:42:23] "GET /ping HTTP/1.1" 200 -
+[2024-10-23 23:42:57,982.982] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:42:57] "GET /ping HTTP/1.1" 200 -
+[2024-10-23 23:43:57,616.616] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:43:57,906.906] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:44:02,484.484] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:44:02,486.486] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:44:18,563.563] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:44:18] "GET /ping HTTP/1.1" 200 -
+[2024-10-23 23:44:32,442.442] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:44:32] "GET /ping HTTP/1.1" 200 -
+[2024-10-23 23:46:02,478.478] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:46:02,828.828] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:46:07,575.575] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:46:07,577.577] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:46:10,289.289] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:46:10,611.611] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:46:15,114.114] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:46:15,117.117] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:46:26,126.126] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:46:26] "GET /ping HTTP/1.1" 200 -
+[2024-10-23 23:47:28,920.920] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:47:29,229.229] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:47:33,936.936] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:47:33,942.942] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:47:42,367.367] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:47:42,678.678] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:47:47,520.520] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:47:47,523.523] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:47:58,289.289] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:47:58,618.618] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:48:03,239.239] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:48:03,242.242] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:48:12,813.813] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-23 23:48:13,119.119] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:48:17,722.722] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:48:17,723.723] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:51:14,904.904] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-23 23:51:15,260.260] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:51:19,994.994] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:51:19,996.996] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:52:50,966.966] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-23 23:52:51,241.241] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:52:55,747.747] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:52:55,749.749] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:53:06,565.565] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-23 23:53:06,909.909] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:53:11,563.563] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:53:11,566.566] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:53:21,167.167] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-23 23:53:21,591.591] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:53:26,259.259] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:53:26,262.262] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:54:29,375.375] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-23 23:54:29,662.662] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:54:34,356.356] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:54:34,359.359] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:54:50,967.967] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-23 23:54:51,281.281] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:54:55,796.796] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:54:55,799.799] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:55:00,751.751] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-23 23:55:01,054.054] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:55:05,914.914] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:55:05,917.917] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:55:16,701.701] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\__init__.py', reloading
+[2024-10-23 23:55:17,057.057] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:55:21,868.868] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:55:21,871.871] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:55:28,006.006] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\__init__.py', reloading
+[2024-10-23 23:55:28,336.336] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:55:32,978.978] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:55:32,980.980] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:56:47,948.948] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-23 23:56:48,273.273] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:56:52,756.756] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:56:52,759.759] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:58:17,324.324] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:58:17,674.674] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:58:22,264.264] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:58:22,267.267] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:58:32,086.086] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:58:32] "GET /ping HTTP/1.1" 200 -
+[2024-10-23 23:58:38,494.494] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:58:38] "GET /ping HTTP/1.1" 200 -
+[2024-10-23 23:59:28,421.421] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-23 23:59:28,740.740] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-23 23:59:33,216.216] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-23 23:59:33,218.218] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-23 23:59:39,862.862] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [23/Oct/2024 23:59:39] "GET /ping HTTP/1.1" 200 -

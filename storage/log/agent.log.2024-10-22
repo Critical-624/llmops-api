@@ -1,0 +1,1054 @@
+[2024-10-22 17:52:16,349.349] _internal.py -> _log line:96 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-10-22 17:52:16,349.349] _internal.py -> _log line:96 [INFO]: [33mPress CTRL+C to quit[0m
+[2024-10-22 17:52:16,350.350] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 17:52:20,862.862] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 17:52:20,865.865] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 17:53:08,739.739] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-22 17:53:09,098.098] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 17:53:13,746.746] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 17:53:13,749.749] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 17:55:28,365.365] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-22 17:55:28,673.673] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 17:55:33,516.516] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 17:55:33,519.519] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 17:55:54,803.803] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-22 17:55:55,113.113] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 17:55:59,752.752] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 17:55:59,756.756] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 17:56:22,142.142] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: At 'llm' node, '_tools_condition' branch found unknown target 'tool_executor'
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 37, in run
+    agent = self._build_agent()
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 73, in _build_agent
+    agent = graph.compile()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\state.py", line 412, in compile
+    self.validate(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\graph.py", line 346, in validate
+    raise ValueError(
+ValueError: At 'llm' node, '_tools_condition' branch found unknown target 'tool_executor'
+[2024-10-22 17:56:22,156.156] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 17:56:22] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 17:56:41,486.486] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-22 17:56:41,847.847] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 17:56:49,206.206] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 17:56:49,208.208] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 17:56:49,759.759] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 40, in run
+    return agent.invoke({
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1424, in invoke
+    for chunk in self.stream(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1102, in stream
+    _panic_or_proceed(all_futures, loop.step)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1540, in _panic_or_proceed
+    raise exc
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\executor.py", line 60, in done
+    task.result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "D:\Env\python\python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\retry.py", line 26, in run_with_retry
+    task.proc.invoke(task.input, task.config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\runnables\base.py", line 2877, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\utils.py", line 102, in invoke
+    ret = context.run(self.func, input, **kwargs)
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 111, in _llm_node
+    llm = ChatOpenAI(self.agent_config.llm_config.model_name)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\load\serializable.py", line 113, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+[2024-10-22 17:56:49,776.776] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 17:56:49] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 17:57:08,058.058] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-22 17:57:08,399.399] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 17:57:13,255.255] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 17:57:13,257.257] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 17:57:15,145.145] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: 'FieldInfo' object is not iterable
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 40, in run
+    return agent.invoke({
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1424, in invoke
+    for chunk in self.stream(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1102, in stream
+    _panic_or_proceed(all_futures, loop.step)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1540, in _panic_or_proceed
+    raise exc
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\executor.py", line 60, in done
+    task.result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "D:\Env\python\python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\retry.py", line 26, in run_with_retry
+    task.proc.invoke(task.input, task.config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\runnables\base.py", line 2877, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\utils.py", line 102, in invoke
+    ret = context.run(self.func, input, **kwargs)
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 115, in _llm_node
+    llm = llm.bind_tools(self.tools)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_openai\chat_models\base.py", line 969, in bind_tools
+    formatted_tools = [convert_to_openai_tool(tool) for tool in tools]
+TypeError: 'FieldInfo' object is not iterable
+[2024-10-22 17:57:15,163.163] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 17:57:15] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 17:57:50,696.696] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-22 17:57:51,012.012] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 17:57:56,968.968] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 17:57:56,970.970] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 17:57:59,986.986] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: 'FieldInfo' object is not iterable
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 40, in run
+    return agent.invoke({
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1424, in invoke
+    for chunk in self.stream(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1102, in stream
+    _panic_or_proceed(all_futures, loop.step)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1540, in _panic_or_proceed
+    raise exc
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\executor.py", line 60, in done
+    task.result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "D:\Env\python\python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\retry.py", line 26, in run_with_retry
+    task.proc.invoke(task.input, task.config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\runnables\base.py", line 2877, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\utils.py", line 102, in invoke
+    ret = context.run(self.func, input, **kwargs)
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 116, in _llm_node
+    llm = llm.bind_tools(self.tools)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_openai\chat_models\base.py", line 969, in bind_tools
+    formatted_tools = [convert_to_openai_tool(tool) for tool in tools]
+TypeError: 'FieldInfo' object is not iterable
+[2024-10-22 17:58:00,002.002] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 17:58:00] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 17:59:50,553.553] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\base_agent.py', reloading
+[2024-10-22 17:59:50,844.844] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 17:59:55,359.359] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 17:59:55,361.361] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 17:59:57,382.382] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: 'FieldInfo' object is not iterable
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 40, in run
+    return agent.invoke({
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1424, in invoke
+    for chunk in self.stream(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1102, in stream
+    _panic_or_proceed(all_futures, loop.step)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1540, in _panic_or_proceed
+    raise exc
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\executor.py", line 60, in done
+    task.result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "D:\Env\python\python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\retry.py", line 26, in run_with_retry
+    task.proc.invoke(task.input, task.config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\runnables\base.py", line 2877, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\utils.py", line 102, in invoke
+    ret = context.run(self.func, input, **kwargs)
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 116, in _llm_node
+    llm = llm.bind_tools(self.tools)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_openai\chat_models\base.py", line 969, in bind_tools
+    formatted_tools = [convert_to_openai_tool(tool) for tool in tools]
+TypeError: 'FieldInfo' object is not iterable
+[2024-10-22 17:59:57,400.400] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 17:59:57] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 18:00:21,134.134] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-22 18:00:21,424.424] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:00:25,821.821] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:00:25,824.824] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:00:31,884.884] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-22 18:00:32,182.182] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:00:36,937.937] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:00:36,939.939] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:00:38,364.364] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-22 18:00:38,710.710] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:00:43,479.479] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:00:43,482.482] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:00:44,922.922] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\base_agent.py', reloading
+[2024-10-22 18:00:45,240.240] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:00:49,788.788] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:00:49,791.791] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:01:02,192.192] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: '>' not supported between instances of 'FieldInfo' and 'int'
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 40, in run
+    return agent.invoke({
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1424, in invoke
+    for chunk in self.stream(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1102, in stream
+    _panic_or_proceed(all_futures, loop.step)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1540, in _panic_or_proceed
+    raise exc
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\executor.py", line 60, in done
+    task.result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "D:\Env\python\python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\retry.py", line 26, in run_with_retry
+    task.proc.invoke(task.input, task.config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\runnables\base.py", line 2877, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\utils.py", line 102, in invoke
+    ret = context.run(self.func, input, **kwargs)
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 114, in _llm_node
+    if hasattr(llm, "bind_tools") and callable(getattr(llm, "bind_tools")) and self.tools > 0:
+TypeError: '>' not supported between instances of 'FieldInfo' and 'int'
+[2024-10-22 18:01:02,211.211] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 18:01:02] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 18:01:09,091.091] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: '>' not supported between instances of 'FieldInfo' and 'int'
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 40, in run
+    return agent.invoke({
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1424, in invoke
+    for chunk in self.stream(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1102, in stream
+    _panic_or_proceed(all_futures, loop.step)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1540, in _panic_or_proceed
+    raise exc
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\executor.py", line 60, in done
+    task.result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "D:\Env\python\python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\retry.py", line 26, in run_with_retry
+    task.proc.invoke(task.input, task.config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\runnables\base.py", line 2877, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\utils.py", line 102, in invoke
+    ret = context.run(self.func, input, **kwargs)
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 114, in _llm_node
+    if hasattr(llm, "bind_tools") and callable(getattr(llm, "bind_tools")) and self.tools > 0:
+TypeError: '>' not supported between instances of 'FieldInfo' and 'int'
+[2024-10-22 18:01:09,110.110] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 18:01:09] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 18:01:23,949.949] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-22 18:01:24,240.240] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:01:28,829.829] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:01:28,830.830] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:01:29,394.394] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: object of type 'FieldInfo' has no len()
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 40, in run
+    return agent.invoke({
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1424, in invoke
+    for chunk in self.stream(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1102, in stream
+    _panic_or_proceed(all_futures, loop.step)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1540, in _panic_or_proceed
+    raise exc
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\executor.py", line 60, in done
+    task.result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "D:\Env\python\python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\retry.py", line 26, in run_with_retry
+    task.proc.invoke(task.input, task.config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\runnables\base.py", line 2877, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\utils.py", line 102, in invoke
+    ret = context.run(self.func, input, **kwargs)
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 114, in _llm_node
+    if hasattr(llm, "bind_tools") and callable(getattr(llm, "bind_tools")) and len(self.tools) > 0:
+TypeError: object of type 'FieldInfo' has no len()
+[2024-10-22 18:01:29,409.409] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 18:01:29] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 18:02:25,449.449] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\base_agent.py', reloading
+[2024-10-22 18:02:25,759.759] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:02:30,415.415] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:02:30,417.417] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:02:36,482.482] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\base_agent.py', reloading
+[2024-10-22 18:02:36,823.823] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:02:41,426.426] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:02:41,428.428] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:03:03,922.922] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: '__end__'
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 40, in run
+    return agent.invoke({
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1424, in invoke
+    for chunk in self.stream(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1102, in stream
+    _panic_or_proceed(all_futures, loop.step)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1540, in _panic_or_proceed
+    raise exc
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\executor.py", line 60, in done
+    task.result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "D:\Env\python\python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\retry.py", line 26, in run_with_retry
+    task.proc.invoke(task.input, task.config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\runnables\base.py", line 2879, in invoke
+    input = context.run(step.invoke, input, config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\utils.py", line 102, in invoke
+    ret = context.run(self.func, input, **kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\graph.py", line 88, in _route
+    return self._finish(writer, input, result)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\graph.py", line 115, in _finish
+    destinations = [r if isinstance(r, Send) else self.ends[r] for r in result]
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\graph.py", line 115, in <listcomp>
+    destinations = [r if isinstance(r, Send) else self.ends[r] for r in result]
+KeyError: '__end__'
+[2024-10-22 18:03:03,942.942] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 18:03:03] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 18:05:54,065.065] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: '__end__'
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 40, in run
+    return agent.invoke({
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1424, in invoke
+    for chunk in self.stream(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1102, in stream
+    _panic_or_proceed(all_futures, loop.step)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\__init__.py", line 1540, in _panic_or_proceed
+    raise exc
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\executor.py", line 60, in done
+    task.result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "D:\Env\python\python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "D:\Env\python\python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\pregel\retry.py", line 26, in run_with_retry
+    task.proc.invoke(task.input, task.config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langchain_core\runnables\base.py", line 2879, in invoke
+    input = context.run(step.invoke, input, config)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\utils.py", line 102, in invoke
+    ret = context.run(self.func, input, **kwargs)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\graph.py", line 88, in _route
+    return self._finish(writer, input, result)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\graph.py", line 115, in _finish
+    destinations = [r if isinstance(r, Send) else self.ends[r] for r in result]
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\graph.py", line 115, in <listcomp>
+    destinations = [r if isinstance(r, Send) else self.ends[r] for r in result]
+KeyError: '__end__'
+[2024-10-22 18:05:54,082.082] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 18:05:54] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 18:06:50,021.021] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-22 18:06:50,326.326] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:06:54,779.779] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:06:54,781.781] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:07:04,619.619] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: Node `tools` is not reachable
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 37, in run
+    agent = self._build_agent()
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 73, in _build_agent
+    agent = graph.compile()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\state.py", line 412, in compile
+    self.validate(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\graph.py", line 358, in validate
+    raise ValueError(f"Node `{node}` is not reachable")
+ValueError: Node `tools` is not reachable
+[2024-10-22 18:07:04,629.629] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 18:07:04] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 18:08:08,015.015] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: Node `tools` is not reachable
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 37, in run
+    agent = self._build_agent()
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 73, in _build_agent
+    agent = graph.compile()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\state.py", line 412, in compile
+    self.validate(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\graph.py", line 358, in validate
+    raise ValueError(f"Node `{node}` is not reachable")
+ValueError: Node `tools` is not reachable
+[2024-10-22 18:08:08,025.025] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 18:08:08] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 18:09:03,132.132] _internal.py -> _log line:96 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-10-22 18:09:03,133.133] _internal.py -> _log line:96 [INFO]: [33mPress CTRL+C to quit[0m
+[2024-10-22 18:09:03,134.134] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:09:07,536.536] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:09:07,538.538] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:28:45,963.963] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: Node `tools` is not reachable
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 264, in ping
+    state = agent.run("你好，你是")
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 37, in run
+    agent = self._build_agent()
+  File "D:\Code\llmops\llmops-api\internal\core\agent\agents\function_call_agent.py", line 73, in _build_agent
+    agent = graph.compile()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\state.py", line 412, in compile
+    self.validate(
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\langgraph\graph\graph.py", line 358, in validate
+    raise ValueError(f"Node `{node}` is not reachable")
+ValueError: Node `tools` is not reachable
+[2024-10-22 18:28:45,978.978] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 18:28:45] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 18:51:18,878.878] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-22 18:51:19,165.165] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:51:23,677.677] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:51:23,680.680] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:51:28,823.823] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: Object of type SystemMessage is not JSON serializable
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 268, in ping
+    return success_message({"state": state})
+  File "D:\Code\llmops\llmops-api\pkg\response\response.py", line 56, in success_message
+    return message(code=HttpCode.SUCCESS, msg=msg)
+  File "D:\Code\llmops\llmops-api\pkg\response\response.py", line 51, in message
+    return json(Response(code=code, message=msg, data={}))
+  File "D:\Code\llmops\llmops-api\pkg\response\response.py", line 26, in json
+    return jsonify(data), 200
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\json\provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\json\provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+  File "D:\Env\python\python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\Env\python\python310\lib\json\encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "D:\Env\python\python310\lib\json\encoder.py", line 439, in _iterencode
+    yield from _iterencode(o, _current_indent_level)
+  File "D:\Env\python\python310\lib\json\encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "D:\Env\python\python310\lib\json\encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "D:\Env\python\python310\lib\json\encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "D:\Env\python\python310\lib\json\encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "D:\Env\python\python310\lib\json\encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "D:\Env\python\python310\lib\json\encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\json\provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type SystemMessage is not JSON serializable
+[2024-10-22 18:51:28,864.864] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 18:51:28] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 18:52:17,549.549] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-22 18:52:17,840.840] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:52:22,565.565] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:52:22,567.567] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:52:50,629.629] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\base_agent.py', reloading
+[2024-10-22 18:52:50,934.934] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:52:55,491.491] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:52:55,494.494] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:52:58,197.197] http.py -> _register_error_handler line:66 [ERROR]: An error occurred: 'SystemMessage' object has no attribute 'role'
+Traceback (most recent call last):
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Code\llmops\llmops-api\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 268, in ping
+    return success_message({"messages": [{
+  File "D:\Code\llmops\llmops-api\internal\handler\app_handler.py", line 270, in <listcomp>
+    "role": message.role,
+AttributeError: 'SystemMessage' object has no attribute 'role'
+[2024-10-22 18:52:58,207.207] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 18:52:58] "[35m[1mGET /ping HTTP/1.1[0m" 500 -
+[2024-10-22 18:53:10,848.848] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\handler\\app_handler.py', reloading
+[2024-10-22 18:53:11,294.294] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:53:15,704.704] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:53:15,706.706] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:53:17,924.924] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 18:53:17] "GET /ping HTTP/1.1" 200 -
+[2024-10-22 18:57:10,966.966] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 18:57:11,282.282] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:57:15,728.728] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:57:15,730.730] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:57:18,307.307] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 18:57:18,595.595] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:57:23,140.140] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:57:23,143.143] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 18:57:30,339.339] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 18:57:30,647.647] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 18:57:35,117.117] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 18:57:35,120.120] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 19:00:21,011.011] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 19:00:21,391.391] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 19:00:26,210.210] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 19:00:26,213.213] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 19:02:52,373.373] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 19:02:52,656.656] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 19:02:57,018.018] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 19:02:57,020.020] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 19:06:31,881.881] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 19:06:32,206.206] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 19:06:36,720.720] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 19:06:36,723.723] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 20:37:04,261.261] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\base_agent.py', reloading
+[2024-10-22 20:37:04,579.579] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 20:37:09,690.690] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 20:37:09,693.693] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 20:37:27,291.291] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\base_agent.py', reloading
+[2024-10-22 20:37:27,578.578] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 20:37:32,507.507] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 20:37:32,510.510] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 20:37:58,272.272] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\base_agent.py', reloading
+[2024-10-22 20:37:58,597.597] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 20:38:04,037.037] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 20:38:04,041.041] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 20:38:18,179.179] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-22 20:38:18,470.470] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 20:38:23,476.476] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 20:38:23,478.478] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 21:12:42,273.273] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\base_agent.py', reloading
+[2024-10-22 21:12:42,584.584] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 21:12:47,384.384] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 21:12:47,386.386] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 21:12:50,004.004] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\base_agent.py', reloading
+[2024-10-22 21:12:50,322.322] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 21:12:55,442.442] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 21:12:55,445.445] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 21:13:17,660.660] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\base_agent.py', reloading
+[2024-10-22 21:13:17,955.955] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 21:13:22,480.480] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 21:13:22,483.483] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 21:13:41,352.352] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\base_agent.py', reloading
+[2024-10-22 21:13:41,674.674] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 21:13:46,465.465] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 21:13:46,468.468] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 21:22:40,159.159] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 21:22:40,500.500] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 21:22:45,404.404] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 21:22:45,406.406] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 21:22:52,627.627] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 21:22:52,957.957] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 21:22:57,918.918] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 21:22:57,921.921] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 21:23:42,360.360] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\memory\\token_buffer_memory.py', reloading
+[2024-10-22 21:23:42,660.660] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 21:23:49,660.660] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 21:23:49,662.662] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 21:23:52,231.231] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\memory\\token_buffer_memory.py', reloading
+[2024-10-22 21:23:52,550.550] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 21:23:57,244.244] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 21:23:57,245.245] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 21:24:12,574.574] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\memory\\token_buffer_memory.py', reloading
+[2024-10-22 21:24:12,893.893] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 21:24:17,822.822] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 21:24:17,825.825] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 21:24:36,289.289] _internal.py -> _log line:96 [INFO]: 127.0.0.1 - - [22/Oct/2024 21:24:36] "GET /ping HTTP/1.1" 200 -
+[2024-10-22 21:27:13,929.929] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 21:27:14,228.228] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 21:27:18,905.905] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 21:27:18,908.908] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 21:57:04,336.336] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 21:57:04,644.644] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 21:57:09,305.305] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 21:57:09,307.307] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 21:58:57,184.184] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 21:58:57,496.496] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 21:59:02,103.103] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 21:59:02,105.105] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 22:31:34,802.802] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\function_call_agent.py', reloading
+[2024-10-22 22:31:35,105.105] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 22:31:39,678.678] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 22:31:39,680.680] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 22:31:56,174.174] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 22:31:56,465.465] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 22:32:00,915.915] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 22:32:00,918.918] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 22:32:03,480.480] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 22:32:03,777.777] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 22:32:08,150.150] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 22:32:08,153.153] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 22:32:35,018.018] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 22:32:35,338.338] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 22:32:39,990.990] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 22:32:39,993.993] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:07:11,257.257] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:07:11,630.630] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:07:16,164.164] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:07:16,167.167] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:07:50,023.023] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:07:50,331.331] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:07:54,773.773] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:07:54,775.775] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:07:56,165.165] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:07:56,463.463] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:08:00,861.861] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:08:00,863.863] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:08:39,352.352] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:08:39,645.645] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:08:44,222.222] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:08:44,225.225] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:08:45,625.625] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:08:45,921.921] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:08:50,508.508] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:08:50,511.511] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:09:17,402.402] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:09:17,685.685] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:09:22,063.063] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:09:22,065.065] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:09:42,081.081] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:09:42,395.395] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:09:47,028.028] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:09:47,031.031] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:10:01,668.668] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:10:01,981.981] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:10:07,452.452] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:10:07,455.455] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:10:08,867.867] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:10:09,208.208] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:10:13,684.684] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:10:13,686.686] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:10:15,120.120] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:10:15,419.419] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:10:19,952.952] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:10:19,955.955] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:10:21,386.386] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:10:21,689.689] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:10:26,154.154] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:10:26,157.157] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:10:49,615.615] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:10:49,898.898] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:10:54,344.344] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:10:54,347.347] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:11:00,427.427] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:11:00,746.746] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:11:05,231.231] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:11:05,233.233] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:11:21,581.581] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:11:21,865.865] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:11:26,328.328] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:11:26,330.330] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:11:31,222.222] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:11:31,525.525] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:11:35,933.933] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:11:35,936.936] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:11:55,754.754] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:11:56,055.055] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:12:00,593.593] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:12:00,596.596] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:16:12,936.936] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:16:13,259.259] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:16:22,207.207] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:16:22,210.210] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:16:27,128.128] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:16:27,455.455] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:16:34,431.431] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:16:34,433.433] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:17:26,731.731] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:17:27,074.074] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:17:37,047.047] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:17:37,050.050] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:27:26,334.334] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:27:26,634.634] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:27:31,083.083] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:27:31,087.087] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:28:30,369.369] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:28:30,669.669] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:28:35,104.104] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:28:35,107.107] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:28:49,287.287] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:28:49,600.600] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:28:54,096.096] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:28:54,098.098] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:28:55,515.515] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:28:55,815.815] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:29:00,354.354] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:29:00,356.356] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:29:02,939.939] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:29:03,230.230] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:29:07,670.670] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:29:07,673.673] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:29:17,207.207] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:29:17,521.521] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:29:21,946.946] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:29:21,949.949] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:32:34,280.280] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:32:34,592.592] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:32:38,966.966] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:32:38,969.969] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:33:07,005.005] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:33:07,354.354] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:33:11,945.945] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:33:11,948.948] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:33:15,725.725] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:33:16,031.031] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:33:20,512.512] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:33:20,514.514] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:33:52,049.049] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:33:52,361.361] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:33:56,850.850] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:33:56,853.853] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:34:00,623.623] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:34:00,952.952] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:34:05,502.502] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:34:05,505.505] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:34:39,374.374] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:34:39,678.678] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:34:44,197.197] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:34:44,200.200] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:34:50,244.244] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:34:50,553.553] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:34:55,071.071] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:34:55,073.073] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:35:00,034.034] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:35:00,322.322] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:35:04,965.965] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:35:04,968.968] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:35:15,639.639] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:35:16,037.037] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:35:20,541.541] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:35:20,543.543] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:35:30,072.072] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:35:30,362.362] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:35:34,813.813] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:35:34,816.816] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:35:40,898.898] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:35:41,218.218] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:35:45,899.899] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:35:45,902.902] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:35:54,274.274] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:35:54,592.592] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:35:59,202.202] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:35:59,204.204] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:36:05,256.256] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:36:05,561.561] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:36:10,108.108] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:36:10,110.110] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:36:48,479.479] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:36:48,813.813] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:36:53,217.217] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:36:53,219.219] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:38:55,012.012] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:38:55,362.362] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:38:59,959.959] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:38:59,963.963] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:39:03,686.686] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:39:04,013.013] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:39:08,516.516] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:39:08,518.518] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:39:11,073.073] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:39:11,391.391] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:39:15,882.882] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:39:15,885.885] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:39:22,007.007] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:39:22,304.304] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:39:26,731.731] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:39:26,734.734] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:39:39,709.709] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:39:39,997.997] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:39:44,583.583] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:39:44,586.586] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:39:57,638.638] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:39:57,917.917] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:40:02,495.495] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:40:02,497.497] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:40:06,255.255] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:40:06,561.561] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:40:11,354.354] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:40:11,357.357] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:40:20,962.962] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:40:21,246.246] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:40:25,658.658] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:40:25,661.661] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:40:30,606.606] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:40:30,903.903] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:40:35,428.428] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:40:35,431.431] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:40:50,806.806] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:40:51,122.122] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:40:55,679.679] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:40:55,682.682] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:41:17,947.947] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:41:18,240.240] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:41:22,765.765] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:41:22,768.768] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:41:29,979.979] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:41:30,277.277] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:41:34,871.871] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:41:34,874.874] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:41:39,752.752] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:41:40,078.078] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:41:44,711.711] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:41:44,713.713] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:41:56,565.565] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:41:56,883.883] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:42:01,504.504] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:42:01,507.507] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:42:36,500.500] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\queue_entity.py', reloading
+[2024-10-22 23:42:36,826.826] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:42:41,272.272] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:42:41,274.274] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:43:02,483.483] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 23:43:02,813.813] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:43:07,464.464] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:43:07,466.466] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:43:14,683.683] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\entities\\agent_entity.py', reloading
+[2024-10-22 23:43:14,980.980] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:43:19,400.400] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:43:19,402.402] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:48:16,143.143] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:48:16,451.451] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:48:21,035.035] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:48:21,038.038] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:48:28,279.279] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:48:28,598.598] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:48:33,425.425] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:48:33,428.428] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:48:34,848.848] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:48:35,184.184] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:48:39,677.677] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:48:39,680.680] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:48:51,557.557] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:48:51,869.869] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:48:56,186.186] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:48:56,188.188] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:49:03,399.399] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:49:03,729.729] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:49:07,873.873] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:49:07,875.875] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:49:09,176.176] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:49:09,490.490] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:49:14,061.061] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:49:14,062.062] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:49:20,982.982] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:49:21,292.292] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:49:25,567.567] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:49:25,569.569] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:49:26,880.880] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:49:27,189.189] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:49:31,978.978] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:49:31,980.980] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:50:01,966.966] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:50:02,288.288] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:50:07,004.004] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:50:07,008.008] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:50:15,354.354] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:50:15,692.692] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:50:20,374.374] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:50:20,376.376] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:50:28,773.773] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:50:29,062.062] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:50:33,688.688] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:50:33,691.691] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:50:45,482.482] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:50:45,785.785] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:50:50,267.267] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:50:50,271.271] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:50:54,027.027] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:50:54,335.335] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:50:58,902.902] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:50:58,905.905] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:51:00,433.433] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:51:00,754.754] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:51:05,364.364] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:51:05,367.367] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:51:06,828.828] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:51:07,118.118] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:51:11,489.489] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:51:11,492.492] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:51:16,412.412] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:51:16,715.715] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:51:21,378.378] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:51:21,380.380] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:51:28,289.289] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:51:28,578.578] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:51:33,090.090] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:51:33,092.092] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:51:35,489.489] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:51:35,802.802] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:51:40,114.114] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:51:40,116.116] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:51:43,619.619] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:51:43,937.937] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:51:48,214.214] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:51:48,215.215] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:51:52,780.780] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:51:53,078.078] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:51:57,597.597] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:51:57,598.598] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:52:04,455.455] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:52:04,732.732] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:52:09,000.000] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:52:09,002.002] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:52:22,397.397] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:52:22,735.735] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:52:27,266.266] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:52:27,268.268] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:52:31,916.916] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:52:32,218.218] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:52:36,562.562] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:52:36,563.563] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:52:42,238.238] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:52:42,566.566] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:52:46,837.837] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:52:46,838.838] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:52:51,422.422] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:52:51,725.725] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:52:55,963.963] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:52:55,965.965] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:53:03,853.853] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:53:04,147.147] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:53:08,573.573] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:53:08,574.574] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:53:14,279.279] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:53:14,606.606] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:53:19,044.044] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:53:19,045.045] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:53:21,401.401] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:53:21,712.712] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:53:26,094.094] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:53:26,096.096] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:53:27,514.514] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:53:27,821.821] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:53:32,149.149] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:53:32,151.151] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:53:49,218.218] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:53:49,567.567] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:53:54,095.095] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:53:54,097.097] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:54:09,419.419] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:54:09,735.735] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:54:14,398.398] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:54:14,401.401] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:54:18,133.133] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:54:18,450.450] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:54:23,021.021] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:54:23,023.023] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:54:30,238.238] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:54:30,539.539] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:54:35,047.047] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:54:35,049.049] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:54:56,095.095] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:54:56,420.420] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:55:00,914.914] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:55:00,916.916] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:55:05,863.863] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:55:06,156.156] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:55:10,823.823] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:55:10,826.826] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:55:34,307.307] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:55:34,598.598] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:55:39,122.122] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:55:39,125.125] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:55:45,253.253] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:55:45,554.554] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:55:49,957.957] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:55:49,959.959] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:56:11,051.051] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:56:11,338.338] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:56:15,849.849] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:56:15,852.852] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:56:17,286.286] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:56:17,569.569] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:56:22,232.232] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:56:22,235.235] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:56:24,801.801] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:56:25,107.107] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:56:29,642.642] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:56:29,645.645] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:56:47,282.282] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:56:47,582.582] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:56:52,038.038] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:56:52,040.040] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:58:02,797.797] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:58:03,097.097] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:58:07,618.618] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:58:07,620.620] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:58:25,170.170] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:58:25,460.460] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:58:29,876.876] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:58:29,880.880] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:58:32,430.430] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:58:32,717.717] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:58:37,167.167] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:58:37,169.169] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:58:46,737.737] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:58:47,048.048] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:58:51,918.918] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:58:51,921.921] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:59:02,537.537] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:59:02,820.820] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:59:07,376.376] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:59:07,378.378] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
+[2024-10-22 23:59:18,075.075] _internal.py -> _log line:96 [INFO]:  * Detected change in 'D:\\Code\\llmops\\llmops-api\\internal\\core\\agent\\agents\\agent_queue_manager.py', reloading
+[2024-10-22 23:59:18,390.390] _internal.py -> _log line:96 [INFO]:  * Restarting with stat
+[2024-10-22 23:59:22,821.821] _internal.py -> _log line:96 [WARNING]:  * Debugger is active!
+[2024-10-22 23:59:22,823.823] _internal.py -> _log line:96 [INFO]:  * Debugger PIN: 102-324-223
