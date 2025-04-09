@@ -65,6 +65,9 @@ class AgentConfig(BaseModel):
     # 审核配置
     review_config: dict = Field(default_factory=lambda: DEFAULT_APP_CONFIG["review_config"])
 
+    class Config:
+        arbitrary_types_allowed = True  # 允许任意类型
+
 
 class AgentState(MessagesState):
     """智能体状态类"""
