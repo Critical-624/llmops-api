@@ -1,6 +1,38 @@
-[2025-04-01 13:03:46,134.134] _internal.py -> _log line:97 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[2025-04-08 16:08:21,735.735] _internal.py -> _log line:97 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-[2025-04-01 13:03:46,135.135] _internal.py -> _log line:97 [INFO]: [33mPress CTRL+C to quit[0m
-[2025-04-01 13:03:46,137.137] _internal.py -> _log line:97 [INFO]:  * Restarting with stat
-[2025-04-01 13:03:59,437.437] _internal.py -> _log line:97 [WARNING]:  * Debugger is active!
-[2025-04-01 13:03:59,439.439] _internal.py -> _log line:97 [INFO]:  * Debugger PIN: 896-944-183
+[2025-04-08 16:08:21,776.776] _internal.py -> _log line:97 [INFO]: [33mPress CTRL+C to quit[0m
+[2025-04-08 16:08:21,778.778] _internal.py -> _log line:97 [INFO]:  * Restarting with stat
+[2025-04-08 16:08:36,031.031] _internal.py -> _log line:97 [WARNING]:  * Debugger is active!
+[2025-04-08 16:08:36,034.034] _internal.py -> _log line:97 [INFO]:  * Debugger PIN: 896-944-183
+[2025-04-08 16:08:36,344.344] _internal.py -> _log line:97 [INFO]: 127.0.0.1 - - [08/Apr/2025 16:08:36] "OPTIONS /datasets?current_page=1&page_size=20&search_word= HTTP/1.1" 200 -
+[2025-04-08 16:08:37,208.208] base.py -> _exec_single_context line:1896 [INFO]: select pg_catalog.version()
+[2025-04-08 16:08:37,208.208] base.py -> _exec_single_context line:1901 [INFO]: [raw sql] {}
+[2025-04-08 16:08:37,215.215] base.py -> _exec_single_context line:1896 [INFO]: select current_schema()
+[2025-04-08 16:08:37,216.216] base.py -> _exec_single_context line:1901 [INFO]: [raw sql] {}
+[2025-04-08 16:08:37,216.216] base.py -> _exec_single_context line:1896 [INFO]: show standard_conforming_strings
+[2025-04-08 16:08:37,216.216] base.py -> _exec_single_context line:1901 [INFO]: [raw sql] {}
+[2025-04-08 16:08:37,217.217] base.py -> _begin_impl line:1097 [INFO]: BEGIN (implicit)
+[2025-04-08 16:08:37,219.219] base.py -> _exec_single_context line:1896 [INFO]: SELECT dataset.id AS dataset_id, dataset.account_id AS dataset_account_id, dataset.name AS dataset_name, dataset.icon AS dataset_icon, dataset.description AS dataset_description, dataset.updated_at AS dataset_updated_at, dataset.created_at AS dataset_created_at 
+FROM dataset 
+WHERE dataset.account_id = %(account_id_1)s::UUID ORDER BY dataset.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s
+[2025-04-08 16:08:37,219.219] base.py -> _exec_single_context line:1901 [INFO]: [generated in 0.00020s] {'account_id_1': '46db30d1-3199-4e79-a0cd-abf12fa6858f', 'param_1': 20, 'param_2': 0}
+[2025-04-08 16:08:37,309.309] base.py -> _exec_single_context line:1896 [INFO]: SELECT count(*) AS count_1 
+FROM (SELECT dataset.id AS id, dataset.account_id AS account_id, dataset.name AS name, dataset.icon AS icon, dataset.description AS description, dataset.updated_at AS updated_at, dataset.created_at AS created_at 
+FROM dataset 
+WHERE dataset.account_id = %(account_id_1)s::UUID) AS anon_1
+[2025-04-08 16:08:37,309.309] base.py -> _exec_single_context line:1901 [INFO]: [generated in 0.00018s] {'account_id_1': '46db30d1-3199-4e79-a0cd-abf12fa6858f'}
+[2025-04-08 16:08:37,328.328] base.py -> _exec_single_context line:1896 [INFO]: SELECT count(document.id) AS count_1 
+FROM document 
+WHERE document.dataset_id = %(dataset_id_1)s::UUID
+[2025-04-08 16:08:37,329.329] base.py -> _exec_single_context line:1901 [INFO]: [generated in 0.00021s] {'dataset_id_1': UUID('075a106d-98c2-4b0c-b7c8-9ab223124b43')}
+[2025-04-08 16:08:37,386.386] base.py -> _exec_single_context line:1896 [INFO]: SELECT count(app_dataset_join.id) AS count_1 
+FROM app_dataset_join 
+WHERE app_dataset_join.dataset_id = %(dataset_id_1)s::UUID
+[2025-04-08 16:08:37,386.386] base.py -> _exec_single_context line:1901 [INFO]: [generated in 0.00034s] {'dataset_id_1': UUID('075a106d-98c2-4b0c-b7c8-9ab223124b43')}
+[2025-04-08 16:08:37,399.399] base.py -> _exec_single_context line:1896 [INFO]: SELECT coalesce(sum(document.character_count), %(coalesce_2)s) AS coalesce_1 
+FROM document 
+WHERE document.dataset_id = %(dataset_id_1)s::UUID
+[2025-04-08 16:08:37,400.400] base.py -> _exec_single_context line:1901 [INFO]: [generated in 0.00052s] {'coalesce_2': 0, 'dataset_id_1': UUID('075a106d-98c2-4b0c-b7c8-9ab223124b43')}
+[2025-04-08 16:08:37,401.401] base.py -> _rollback_impl line:1123 [INFO]: ROLLBACK
+[2025-04-08 16:08:37,402.402] _internal.py -> _log line:97 [INFO]: 127.0.0.1 - - [08/Apr/2025 16:08:37] "GET /datasets?current_page=1&page_size=20&search_word= HTTP/1.1" 200 -

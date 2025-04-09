@@ -1,4 +1,4 @@
-# 在internal/handler/app_handler.py
+# 在internal/handler/app_handler.py 以及ai_service里
 llm = ChatOpenAI(
     model="google/gemini-2.5-pro-exp-03-25:free",
     openai_api_key=os.getenv("OPENROUTER_API_KEY"),
@@ -94,3 +94,7 @@ from injector import Module, Binder, singleton
 
 from internal.service.vector_database_service import VectorDatabaseService
 binder.bind(VectorDatabaseService, to=VectorDatabaseService(), scope=singleton)
+
+#4.注意后端sse返回的数据流里,回答的名字是answer不是data！所以detailview里应该是data?.answer
+
+#5.注意由于数据校验库的版本问题，dalle3之类的工具服务需要显示声明类型

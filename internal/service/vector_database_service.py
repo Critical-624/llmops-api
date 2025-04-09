@@ -9,7 +9,6 @@ import os
 
 import weaviate
 from injector import inject
-from langchain_core.documents import Document
 from langchain_core.vectorstores import VectorStoreRetriever
 from langchain_weaviate import WeaviateVectorStore
 from weaviate import WeaviateClient
@@ -52,22 +51,6 @@ class VectorDatabaseService:
         """获取检索器"""
         return self.vector_store.as_retriever()
 
-    @classmethod
-    def combine_documents(cls, documents: list[Document]) -> str:
-        """将对应的文档列表使用换行符进行合并"""
-        return "\n\n".join([document.page_content for document in documents])
-
     @property
     def collection(self) -> Collection:
         return self.client.collections.get(COLLECTION_NAME)
-
-    def close(self):
-        """关闭向量数据库连接"""
-        try:
-            if hasattr(self, 'client') and self.client:
-                self.client.close()
-                self.client = None
-                # 可选 - 输出日志确认关闭
-                print("Weaviate连接已关闭")
-        except Exception as e:
-            print(f"关闭Weaviate连接时出错: {e}")

@@ -6,6 +6,7 @@
 @File    : conversation_service.py
 """
 import logging
+import os
 from dataclasses import dataclass
 
 from injector import inject
@@ -37,7 +38,12 @@ class ConversationService(BaseService):
         prompt = ChatPromptTemplate.from_template(SUMMARIZER_TEMPLATE)
 
         # 2.构建大语言模型实例，并且将大语言模型的温度调低，降低幻觉的概率
-        llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.5)
+        llm = ChatOpenAI(
+            model="google/gemini-2.5-pro-exp-03-25:free",
+            openai_api_key=os.getenv("OPENROUTER_API_KEY"),
+            openai_api_base="https://openrouter.ai/api/v1",
+            temperature=0.5,
+        )
 
         # 3.构建链应用
         summary_chain = prompt | llm | StrOutputParser()
@@ -60,7 +66,12 @@ class ConversationService(BaseService):
         ])
 
         # 2.构建大语言模型实例，并且将大语言模型的温度调低，降低幻觉的概率
-        llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+        llm = ChatOpenAI(
+            model="google/gemini-2.5-pro-exp-03-25:free",
+            openai_api_key=os.getenv("OPENROUTER_API_KEY"),
+            openai_api_base="https://openrouter.ai/api/v1",
+            temperature=0,
+        )
         structured_llm = llm.with_structured_output(ConversationInfo)
 
         # 3.构建链应用
@@ -96,7 +107,12 @@ class ConversationService(BaseService):
         ])
 
         # 2.构建大语言模型实例，并且将大语言模型的温度调低，降低幻觉的概率
-        llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+        llm = ChatOpenAI(
+            model="google/gemini-2.5-pro-exp-03-25:free",
+            openai_api_key=os.getenv("OPENROUTER_API_KEY"),
+            openai_api_base="https://openrouter.ai/api/v1",
+            temperature=0,
+        )
         structured_llm = llm.with_structured_output(SuggestedQuestions)
 
         # 3.构建链应用
