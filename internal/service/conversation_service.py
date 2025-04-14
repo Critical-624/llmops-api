@@ -39,9 +39,9 @@ class ConversationService(BaseService):
 
         # 2.构建大语言模型实例，并且将大语言模型的温度调低，降低幻觉的概率
         llm = ChatOpenAI(
-            model="google/gemini-2.5-pro-exp-03-25:free",
-            openai_api_key=os.getenv("OPENROUTER_API_KEY"),
-            openai_api_base="https://openrouter.ai/api/v1",
+            model="Qwen/Qwen2.5-7B-Instruct",
+            openai_api_key=os.getenv("SILICONE_FLOW_API_KEY"),
+            openai_api_base=os.getenv("SILICONE_FLOW_BASE_URL"),
             temperature=0.5,
         )
 
@@ -67,9 +67,9 @@ class ConversationService(BaseService):
 
         # 2.构建大语言模型实例，并且将大语言模型的温度调低，降低幻觉的概率
         llm = ChatOpenAI(
-            model="google/gemini-2.5-pro-exp-03-25:free",
-            openai_api_key=os.getenv("OPENROUTER_API_KEY"),
-            openai_api_base="https://openrouter.ai/api/v1",
+            model="Qwen/Qwen2.5-7B-Instruct",
+            openai_api_key=os.getenv("SILICONE_FLOW_API_KEY"),
+            openai_api_base=os.getenv("SILICONE_FLOW_BASE_URL"),
             temperature=0,
         )
         structured_llm = llm.with_structured_output(ConversationInfo)
@@ -108,9 +108,9 @@ class ConversationService(BaseService):
 
         # 2.构建大语言模型实例，并且将大语言模型的温度调低，降低幻觉的概率
         llm = ChatOpenAI(
-            model="google/gemini-2.5-pro-exp-03-25:free",
-            openai_api_key=os.getenv("OPENROUTER_API_KEY"),
-            openai_api_base="https://openrouter.ai/api/v1",
+            model="Qwen/Qwen2.5-7B-Instruct",
+            openai_api_key=os.getenv("SILICONE_FLOW_API_KEY"),
+            openai_api_base=os.getenv("SILICONE_FLOW_BASE_URL"),
             temperature=0,
         )
         structured_llm = llm.with_structured_output(SuggestedQuestions)

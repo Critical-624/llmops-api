@@ -1,8 +1,14 @@
 # 在internal/handler/app_handler.py 以及ai_service里
 llm = ChatOpenAI(
-    model="google/gemini-2.5-pro-exp-03-25:free",
+    model="google/gemini-2.0-flash-thinking-exp:free",
     openai_api_key=os.getenv("OPENROUTER_API_KEY"),
     openai_api_base="https://openrouter.ai/api/v1",
+)
+
+llm = ChatOpenAI(
+    model="Qwen/Qwen2.5-7B-Instruct",
+    openai_api_key=os.getenv("SILICONE_FLOW_API_KEY"),
+    openai_api_base=os.getenv("SILICONE_FLOW_BASE_URL"),
 )
 
 # OpenAIEmbeddings配置为使用硅基流动的API

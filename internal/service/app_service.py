@@ -6,6 +6,7 @@
 @File    : app_service.py
 """
 import json
+import os
 from dataclasses import dataclass
 from datetime import datetime
 from threading import Thread
@@ -491,6 +492,8 @@ class AppService(BaseService):
         # todo:5.根据传递的model_config实例化不同的LLM模型，等待多LLM接入后该处会发生变化
         llm = ChatOpenAI(
             model=draft_app_config["model_config"]["model"],
+            openai_api_key=os.getenv("SILICONE_FLOW_API_KEY"),
+            openai_api_base=os.getenv("SILICONE_FLOW_BASE_URL"),
             **draft_app_config["model_config"]["parameters"],
         )
 
