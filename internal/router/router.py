@@ -22,6 +22,12 @@ from internal.handler import (
     AccountHandler,
     AuthHandler,
     AIHandler,
+    ApiKeyHandler,
+    OpenAPIHandler,
+    BuiltinAppHandler,
+    WorkflowHandler,
+    LanguageModelHandler,
+    AssistantAgentHandler,
 )
 
 
@@ -40,16 +46,27 @@ class Router:
     account_handler: AccountHandler
     auth_handler: AuthHandler
     ai_handler: AIHandler
+    api_key_handler: ApiKeyHandler
+    openapi_handler: OpenAPIHandler
+    builtin_app_handler: BuiltinAppHandler
+    workflow_handler: WorkflowHandler
+    language_model_handler: LanguageModelHandler
+    assistant_agent_handler: AssistantAgentHandler
 
     def register_router(self, app: Flask):
         """注册路由"""
         # 1.创建一个蓝图
         bp = Blueprint("llmops", __name__, url_prefix="")
+        openapi_bp = Blueprint("openapi", __name__, url_prefix="")
 
         # 2.将url与对应的控制器方法做绑定
         bp.add_url_rule("/ping", view_func=self.app_handler.ping)
+        bp.add_url_rule("/apps", view_func=self.app_handler.get_apps_with_page)
         bp.add_url_rule("/apps", methods=["POST"], view_func=self.app_handler.create_app)
         bp.add_url_rule("/apps/<uuid:app_id>", view_func=self.app_handler.get_app)
+        bp.add_url_rule("/apps/<uuid:app_id>", methods=["POST"], view_func=self.app_handler.update_app)
+        bp.add_url_rule("/apps/<uuid:app_id>/delete", methods=["POST"], view_func=self.app_handler.delete_app)
+        bp.add_url_rule("/apps/<uuid:app_id>/copy", methods=["POST"], view_func=self.app_handler.copy_app)
         bp.add_url_rule("/apps/<uuid:app_id>/draft-app-config", view_func=self.app_handler.get_draft_app_config)
         bp.add_url_rule(
             "/apps/<uuid:app_id>/draft-app-config",
@@ -264,9 +281,119 @@ class Router:
         # 8.AI辅助模块
         bp.add_url_rule("/ai/optimize-prompt", methods=["POST"], view_func=self.ai_handler.optimize_prompt)
         bp.add_url_rule(
-            "/ai/suggested-questions", methods=["POST"],
+            "/ai/suggested-questions",
+            methods=["POST"],
             view_func=self.ai_handler.generate_suggested_questions,
         )
 
-        # 6.在应用上注册蓝图
+        # 9.API秘钥模块
+        bp.add_url_rule("/openapi/api-keys", view_func=self.api_key_handler.get_api_keys_with_page)
+        bp.add_url_rule(
+            "/openapi/api-keys",
+            methods=["POST"],
+            view_func=self.api_key_handler.create_api_key,
+        )
+        bp.add_url_rule(
+            "/openapi/api-keys/<uuid:api_key_id>",
+            methods=["POST"],
+            view_func=self.api_key_handler.update_api_key,
+        )
+        bp.add_url_rule(
+            "/openapi/api-keys/<uuid:api_key_id>/is-active",
+            methods=["POST"],
+            view_func=self.api_key_handler.update_api_key_is_active,
+        )
+        bp.add_url_rule(
+            "/openapi/api-keys/<uuid:api_key_id>/delete",
+            methods=["POST"],
+            view_func=self.api_key_handler.delete_api_key,
+        )
+        openapi_bp.add_url_rule(
+            "/openapi/chat",
+            methods=["POST"],
+            view_func=self.openapi_handler.chat,
+        )
+
+        # 10.内置应用模块
+        bp.add_url_rule("/builtin-apps/categories", view_func=self.builtin_app_handler.get_builtin_app_categories)
+        bp.add_url_rule("/builtin-apps", view_func=self.builtin_app_handler.get_builtin_apps)
+        bp.add_url_rule(
+            "/builtin-apps/add-builtin-app-to-space",
+            methods=["POST"],
+            view_func=self.builtin_app_handler.add_builtin_app_to_space,
+        )
+
+        # 11.工作流模块
+        bp.add_url_rule("/workflows", view_func=self.workflow_handler.get_workflows_with_page)
+        bp.add_url_rule("/workflows", methods=["POST"], view_func=self.workflow_handler.create_workflow)
+        bp.add_url_rule("/workflows/<uuid:workflow_id>", view_func=self.workflow_handler.get_workflow)
+        bp.add_url_rule(
+            "/workflows/<uuid:workflow_id>",
+            methods=["POST"],
+            view_func=self.workflow_handler.update_workflow,
+        )
+        bp.add_url_rule(
+            "/workflows/<uuid:workflow_id>/delete",
+            methods=["POST"],
+            view_func=self.workflow_handler.delete_workflow,
+        )
+        bp.add_url_rule(
+            "/workflows/<uuid:workflow_id>/draft-graph",
+            methods=["POST"],
+            view_func=self.workflow_handler.update_draft_graph,
+        )
+        bp.add_url_rule(
+            "/workflows/<uuid:workflow_id>/draft-graph",
+            view_func=self.workflow_handler.get_draft_graph,
+        )
+        bp.add_url_rule(
+            "/workflows/<uuid:workflow_id>/debug",
+            methods=["POST"],
+            view_func=self.workflow_handler.debug_workflow,
+        )
+        bp.add_url_rule(
+            "/workflows/<uuid:workflow_id>/publish",
+            methods=["POST"],
+            view_func=self.workflow_handler.publish_workflow,
+        )
+        bp.add_url_rule(
+            "/workflows/<uuid:workflow_id>/cancel-publish",
+            methods=["POST"],
+            view_func=self.workflow_handler.cancel_publish_workflow,
+        )
+
+        # 12.语言模型模块
+        bp.add_url_rule("/language-models", view_func=self.language_model_handler.get_language_models)
+        bp.add_url_rule(
+            "/language-models/<string:provider_name>/icon",
+            view_func=self.language_model_handler.get_language_model_icon,
+        )
+        bp.add_url_rule(
+            "/language-models/<string:provider_name>/<string:model_name>",
+            view_func=self.language_model_handler.get_language_model,
+        )
+
+        # 13.辅助Agent模块
+        bp.add_url_rule(
+            "/assistant-agent/chat",
+            methods=["POST"],
+            view_func=self.assistant_agent_handler.assistant_agent_chat,
+        )
+        bp.add_url_rule(
+            "/assistant-agent/chat/<uuid:task_id>/stop",
+            methods=["POST"],
+            view_func=self.assistant_agent_handler.stop_assistant_agent_chat,
+        )
+        bp.add_url_rule(
+            "/assistant-agent/messages",
+            view_func=self.assistant_agent_handler.get_assistant_agent_messages_with_page,
+        )
+        bp.add_url_rule(
+            "/assistant-agent/delete-conversation",
+            methods=["POST"],
+            view_func=self.assistant_agent_handler.delete_assistant_agent_conversation,
+        )
+
+        # 14.在应用上注册蓝图
         app.register_blueprint(bp)
+        app.register_blueprint(openapi_bp)
