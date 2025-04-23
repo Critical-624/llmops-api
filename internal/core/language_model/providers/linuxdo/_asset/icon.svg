@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 定义线性渐变 -->
+    <linearGradient id="gemini-gradient" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4285F4"/> <!-- Google Blue -->
+      <stop offset="0.5" stop-color="#9333EA"/> <!-- Purple -->
+      <stop offset="1" stop-color="#E548A2"/> <!-- Pink/Magenta -->
+    </linearGradient>
+  </defs>
+
+  <!-- 背景：白色圆角矩形 -->
+  <rect width="24" height="24" rx="6" fill="white"/>
+
+  <!-- Gemini 图标：使用之前那个“形状对了”的四角星路径，并应用渐变色 -->
+  <path d="M12 3 L14.83 9.17 L21 12 L14.83 14.83 L12 21 L9.17 14.83 L3 12 L9.17 9.17 Z" fill="url(#gemini-gradient)"/>
+</svg>

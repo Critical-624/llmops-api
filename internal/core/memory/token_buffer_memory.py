@@ -6,6 +6,8 @@
 @File    : token_buffer_memory.py
 """
 from dataclasses import dataclass
+from typing import List
+import tiktoken
 
 from langchain_core.language_models import BaseLanguageModel
 from langchain_core.messages import AnyMessage, HumanMessage, AIMessage, trim_messages, get_buffer_string
@@ -23,6 +25,33 @@ class TokenBufferMemory:
     conversation: Conversation  # 会话模型
     model_instance: BaseLanguageModel  # LLM大语言模型
 
+    def count_message_tokens(self, messages: List[AnyMessage]) -> int:
+        """计算消息列表的token数量"""
+        try:
+            # 首先尝试使用模型自带的token计数方法
+            return self.model_instance.get_num_tokens_from_messages(messages)
+        except (NotImplementedError, AttributeError):
+            # 如果模型不支持，使用tiktoken进行计算
+            encoding = tiktoken.get_encoding("cl100k_base")
+            num_tokens = 0
+            
+            for message in messages:
+                # 每条消息的基础token（根据OpenAI的计算方式）
+                num_tokens += 4  # 每条消息的元数据开销
+                
+                # 计算内容的token
+                if isinstance(message, (HumanMessage, AIMessage)):
+                    num_tokens += len(encoding.encode(str(message.content)))
+                    num_tokens += len(encoding.encode(message.type))  # 消息类型
+                    
+                # 如果消息有额外的key
+                if hasattr(message, "additional_kwargs"):
+                    for key, value in message.additional_kwargs.items():
+                        num_tokens += len(encoding.encode(str(key)))
+                        num_tokens += len(encoding.encode(str(value)))
+            
+            return num_tokens
+
     def get_history_prompt_messages(
             self,
             max_token_limit: int = 2000,
@@ -33,7 +62,7 @@ class TokenBufferMemory:
         if self.conversation is None:
             return []
 
-        # 2.查询该会话的消息列表，并且使用时间进行倒序，同时匹配答案不为空、匹配会话id、没有软删除、状态是正常
+        # 2.查询该会话的消息列表
         messages = self.db.session.query(Message).filter(
             Message.conversation_id == self.conversation.id,
             Message.answer != "",
@@ -44,21 +73,25 @@ class TokenBufferMemory:
 
         # 3.将messages转换成LangChain消息列表
         prompt_messages = []
+        current_tokens = 0
+        
         for message in messages:
-            prompt_messages.extend([
+            new_messages = [
                 HumanMessage(content=message.query),
                 AIMessage(content=message.answer),
-            ])
+            ]
+            
+            # 计算新消息的token数量
+            new_tokens = self.count_message_tokens(new_messages)
+            
+            # 如果添加新消息会超过token限制，就停止添加
+            if current_tokens + new_tokens > max_token_limit:
+                break
+                
+            prompt_messages.extend(new_messages)
+            current_tokens += new_tokens
 
-        # 4.调用LangChain继承的trim_messages函数剪切消息列表
-        return trim_messages(
-            messages=prompt_messages,
-            max_tokens=max_token_limit,
-            token_counter=self.model_instance,
-            strategy="last",
-            start_on="human",
-            end_on="ai",
-        )
+        return prompt_messages
 
     def get_history_prompt_text(
             self,

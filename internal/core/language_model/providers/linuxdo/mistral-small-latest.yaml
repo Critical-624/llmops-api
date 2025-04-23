@@ -1,5 +1,5 @@
-model: qwen-max
-label: qwen-max
+model: mistral-small-latest
+label: Mistral Small Latest
 model_type: chat
 features:
   - tool_call
@@ -7,14 +7,16 @@ features:
 context_window: 32768
 max_output_tokens: 8192
 attributes:
-  model: qwen-max
+  model: "mistralai/mistral-small-latest"
 parameters:
   - name: temperature
     use_template: temperature
+    max: 1
+    default: 0.7
   - name: top_p
     use_template: top_p
     min: 0.01
-    default: 0.5
+    default: 0.8
   - name: presence_penalty
     use_template: presence_penalty
   - name: frequency_penalty
@@ -23,9 +25,3 @@ parameters:
     use_template: max_tokens
     default: 4096
     max: 8192
-metadata:
-  pricing:
-    input: 0.1200
-    output: 0.1200
-    unit: 0.001
-    currency: RMB

@@ -27,6 +27,13 @@
   background: "#FFFFFF"
   supported_model_types:
     - chat
+- name: linuxdo
+  label: LinuxDo
+  description: LinuxDo提供的模型，依据白嫖api决定。
+  icon: icon.svg
+  background: "#FFFFFF"
+  supported_model_types:
+    - chat
 - name: ollama
   label: Ollama
   description: Ollama提供的本地离线大语言模型，例如qwen2.5-7b等。

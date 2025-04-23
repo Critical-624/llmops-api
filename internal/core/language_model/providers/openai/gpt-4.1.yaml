@@ -1,20 +1,19 @@
-model: qwen-max
-label: qwen-max
+model: gpt-4.1
+label: gpt-4.1
 model_type: chat
 features:
   - tool_call
   - agent_thought
-context_window: 32768
-max_output_tokens: 8192
+  - image_input
+context_window: 128000
+max_output_tokens: 16384
 attributes:
-  model: qwen-max
+  model: gpt-4.1
 parameters:
   - name: temperature
     use_template: temperature
   - name: top_p
     use_template: top_p
-    min: 0.01
-    default: 0.5
   - name: presence_penalty
     use_template: presence_penalty
   - name: frequency_penalty
@@ -22,10 +21,9 @@ parameters:
   - name: max_tokens
     use_template: max_tokens
     default: 4096
-    max: 8192
 metadata:
   pricing:
-    input: 0.1200
-    output: 0.1200
+    input: 0.0183
+    output: 0.0733
     unit: 0.001
     currency: RMB

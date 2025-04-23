@@ -129,6 +129,31 @@ class FunctionCallAgent(BaseAgent):
             "messages": [RemoveMessage(id=human_message.id), *preset_messages],
         }
 
+    def estimate_token_count(self,messages):
+        """估算消息的令牌数量
+
+        Args:
+            messages: 消息列表
+
+        Returns:
+            int: 估算的令牌数
+        """
+        # 将消息转换为文本进行估算
+        total_text = ""
+        for msg in messages:
+            if hasattr(msg, "content") and msg.content:
+                total_text += str(msg.content)
+            # 处理工具调用
+            if hasattr(msg, "tool_calls") and msg.tool_calls:
+                total_text += str(msg.tool_calls)
+
+        # 简单估算：平均每个中文字符约为1个token，每个英文单词约为1.3个token
+        cjk_char_count = len(re.findall(r'[\u4e00-\u9fff]', total_text))
+        other_char_count = len(re.sub(r'[\u4e00-\u9fff]', '', total_text))
+
+        # 估算公式：中文字符数 + 其他字符数/4(平均4个字母一个token)
+        return cjk_char_count + other_char_count // 4
+
     def _llm_node(self, state: AgentState) -> AgentState:
         """大语言模型节点"""
         # 1.检测当前Agent迭代次数是否符合需求
@@ -205,22 +230,79 @@ class FunctionCallAgent(BaseAgent):
                         latency=(time.perf_counter() - start_at),
                     ))
         except Exception as e:
-            logging.exception(f"LLM节点发生错误, 错误信息: {str(e)}")
-            self.agent_queue_manager.publish_error(state["task_id"], f"LLM节点发生错误, 错误信息: {str(e)}")
+            logging.exception(f"LLM节点发生错误, 错误信息: {str(e) or 'LLM出现未知错误'}")
+            self.agent_queue_manager.publish_error(
+                state["task_id"],
+                f"LLM节点发生错误, 错误信息: {str(e) or 'LLM出现未知错误'}",
+            )
             raise e
 
-        # 6.如果类型为推理则添加智能体推理事件
+        # 8.计算LLM的输入+输出token总数
+        try:
+            input_token_count = self.llm.get_num_tokens_from_messages(state["messages"])
+            output_token_count = self.llm.get_num_tokens_from_messages([gathered])
+        except NotImplementedError:
+            # 使用自定义估算函数
+            input_token_count = self.estimate_token_count(state["messages"])
+            output_token_count = self.estimate_token_count([gathered])
+            logging.warning(f"使用自定义估算方法计算令牌数：输入={input_token_count}，输出={output_token_count}")
+
+        # 9.获取输入/输出价格和单位
+        try:
+            input_price, output_price, unit = self.llm.get_pricing()
+        except (NotImplementedError, AttributeError):
+            # 默认价格
+            input_price, output_price, unit = 0.01, 0.01, 0.001
+            logging.warning("无法获取价格信息，使用默认价格")
+
+        # 10.计算总token+总成本
+        total_token_count = input_token_count + output_token_count
+        total_price = (input_token_count * input_price + output_token_count * output_price) * unit
+
+        # 11.如果类型为推理则添加智能体推理事件
         if generation_type == "thought":
             self.agent_queue_manager.publish(state["task_id"], AgentThought(
                 id=id,
                 task_id=state["task_id"],
                 event=QueueEvent.AGENT_THOUGHT,
                 thought=json.dumps(gathered.tool_calls),
+                # 消息相关字段
                 message=messages_to_dict(state["messages"]),
+                message_token_count=input_token_count,
+                message_unit_price=input_price,
+                message_price_unit=unit,
+                # 答案相关字段
+                answer="",
+                answer_token_count=output_token_count,
+                answer_unit_price=output_price,
+                answer_price_unit=unit,
+                # Agent推理统计相关
+                total_token_count=total_token_count,
+                total_price=total_price,
                 latency=(time.perf_counter() - start_at),
             ))
         elif generation_type == "message":
-            # 7.如果LLM直接生成answer则表示已经拿到了最终答案，则停止监听
+            # 7.如果LLM直接生成answer则表示已经拿到了最终答案，推送一条空内容用于计算总token+总成本，并停止监听
+            self.agent_queue_manager.publish(state["task_id"], AgentThought(
+                id=id,
+                task_id=state["task_id"],
+                event=QueueEvent.AGENT_MESSAGE,
+                thought="",
+                # 消息相关字段
+                message=messages_to_dict(state["messages"]),
+                message_token_count=input_token_count,
+                message_unit_price=input_price,
+                message_price_unit=unit,
+                # 答案相关字段
+                answer="",
+                answer_token_count=output_token_count,
+                answer_unit_price=output_price,
+                answer_price_unit=unit,
+                # Agent推理统计相关
+                total_token_count=total_token_count,
+                total_price=total_price,
+                latency=(time.perf_counter() - start_at),
+            ))
             self.agent_queue_manager.publish(state["task_id"], AgentThought(
                 id=uuid.uuid4(),
                 task_id=state["task_id"],
